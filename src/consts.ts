@@ -7,12 +7,6 @@ export const SITE: Site = {
   AUTHOR: 'Andras Hejj',
 };
 
-// Blog Page
-export const BLOG: Page = {
-  TITLE: 'Blog',
-  DESCRIPTION: 'Writing on topics I am passionate about.',
-};
-
 // Projects Page
 export const PROJECTS: Page = {
   TITLE: 'Projects',
