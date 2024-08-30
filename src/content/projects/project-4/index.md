@@ -1,31 +1,29 @@
 ---
-title: "Project Four"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 15 2022"
+title: "Federated Learning Platform for Multi-Hospital Medical Research"
+summary: "Developed a secure, privacy-preserving data science platform enabling collaborative medical research across multiple Swiss hospitals"
+date: "Mar 28 2023"
 draft: false
 tags:
-- React
-- Javascript
-- StyleX
+  - Federated Learning
+  - Healthcare
+  - Data Privacy
+  - TensorFlow Federated
+  - Blockchain
+duration: "6 months"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. 
+SP Technologies successfully designed and implemented a groundbreaking Federated Learning Platform for collaborative medical research, involving five major Swiss hospitals. This 6-month project focused on enabling data-driven medical research while ensuring the highest standards of patient data privacy and security.
 
-Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. 
+Key achievements:
 
-Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. 
-Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+1. Data Platform: We built a distributed data infrastructure that allowed hospitals to collaborate on machine learning models without sharing raw patient data, using TensorFlow Federated for secure, decentralized model training.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. 
+2. Data Privacy: Implemented advanced privacy-preserving techniques, including differential privacy and secure multi-party computation, to protect individual patient data while allowing for meaningful aggregate analysis.
 
-Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. 
+3. Blockchain Integration: Utilized blockchain technology to create an immutable audit trail of all data access and model updates, ensuring transparency and trust among participating institutions.
 
-Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. 
-Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+The platform enabled researchers to train AI models on a vastly larger and more diverse dataset than ever before, while fully complying with GDPR and Swiss data protection regulations. It supported various types of medical studies, from rare disease research to drug efficacy analysis.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. 
+This implementation resulted in a 200% increase in the volume of data available for collaborative research, while maintaining zero data breaches. The project accelerated several ongoing medical studies, with one rare disease study reporting a 40% reduction in time-to-insight.
 
-Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. 
-
-Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. 
-Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+The success of this platform positioned Switzerland at the forefront of privacy-preserving medical research, opening new possibilities for international collaboration in healthcare AI.

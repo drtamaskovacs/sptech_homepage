@@ -1,16 +1,23 @@
 ---
-title: "Project One"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 18 2022"
+title: "Real-time Health Data Integration System"
+summary: "Developed a scalable data integration platform for a Swiss regional hospital network, enhancing data flow and accessibility"
+date: "May 15 2019"
 draft: false
 tags:
-- Astro
-- Javascript
-- Typescript
-- Tailwind
-- SolidJs
-demoUrl: https://astro-sphere-demo.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
+  - Data Platform
+  - Healthcare
+  - System Integration
+  - PostgreSQL
+  - Apache Kafka
+duration: "6 months"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+SP Technologies successfully designed and implemented a Real-time Health Data Integration System for a network of regional hospitals in Switzerland. This 6-month project focused on streamlining data flow between different hospital departments and improving data accessibility for healthcare providers.
+
+Key achievements:
+
+1. Data Platform: We built a robust, scalable data infrastructure using PostgreSQL and Apache Kafka, capable of handling real-time data streams from multiple sources including Electronic Health Records (EHR) and laboratory systems.
+
+2. System Integration: Our team integrated the new platform with existing hospital systems, ensuring smooth data exchange between departments and facilities within the hospital network.
+
+The project resulted in a 20% improvement in data accessibility for healthcare providers and a 15% reduction in data-related administrative tasks. This integrated platform laid the foundation for future data-driven initiatives within the hospital network, paving the way for advanced analytics and AI applications in subsequent phases.

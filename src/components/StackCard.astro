@@ -11,11 +11,9 @@ const { text, icon, href } = Astro.props;
 <a
   href={href}
   target="_blank"
-  class="w-fit px-3 py-2 group rounded border flex gap-2 items-center border-neutral-200 dark:border-neutral-700 hover:bg-neutral-100 hover:dark:bg-neutral-800 blend"
+  class="w-fit px-3 py-2 group rounded border flex gap-2 items-center border-neutral-200 dark:border-neutral-700 hover:bg-neutral-100 hover:dark:bg-neutral-800 blend h-[50px]"
 >
-  <use href={`/logos/${icon}.svg`}></use>
-
-  <p>the icon: {icon}</p>
+  <img src={`/logos/${icon}.svg`} alt={text} class="w-full h-full" />
 
   <span
     class="text-sm capitalize text-neutral-500 dark:text-neutral-400 group-hover:text-black group-hover:dark:text-white blend"
