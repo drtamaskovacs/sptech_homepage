@@ -18,6 +18,38 @@
     font-style: normal;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: "Square";
+    src: url("/fonts/Square.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Square";
+    src: url("/fonts/SquareBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Square";
+    src: url("/fonts/SquareExt.ttf") format("truetype");
+    font-weight: 400;
+    font-style: expanded;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Square";
+    src: url("/fonts/SquareExtBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: expanded;
+    font-display: swap;
+  }
 }
 
 html {
