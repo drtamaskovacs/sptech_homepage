@@ -1,0 +1,75 @@
+---
+// ExpertiseSection.astro
+
+// Define the type for expertise items
+interface ExpertiseItem {
+  title: string;
+  description: string;
+  imageUrl: string;
+  imageAlt: string;
+}
+
+// You can import this from a separate data file
+// e.g., import { expertiseItems } from '../data/expertise';
+const expertiseItems: ExpertiseItem[] = [
+  {
+    title: "Data Platforms",
+    description: "Building and operating sophisticated data infrastructure, including data hub, data mesh, and scalable storage solutions.",
+    imageUrl: "/expertise/data-platforms.png",
+    imageAlt: "Data Platforms"
+  },
+  {
+    title: "System Integration",
+    description: "Seamless integration with existing systems and external data sources, specializing in healthcare solutions.",
+    imageUrl: "/expertise/system-integration.png",
+    imageAlt: "System Integration"
+  },
+  {
+    title: "Data Science",
+    description: "Advanced analytics, including business intelligence, data mining, machine learning and image analytics for data-driven decisions.",
+    imageUrl: "/expertise/data-science.png",
+    imageAlt: "Data Science"
+  }
+];
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  items?: ExpertiseItem[];
+}
+
+const { 
+  title = "Our Expertise", 
+  subtitle = "Our comprehensive approach encompasses four interconnected areas",
+  items = expertiseItems 
+} = Astro.props;
+---
+
+<section class="bg-custom-blue-gradient relative">
+  <div class="container mx-auto px-4 py-32">
+    <h2 class="font-square text-center text-5xl font-bold mb-6 text-sky-400">{title}</h2>
+    <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+      {subtitle}
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {items.map((item) => (
+          <div class="relative rounded-xl border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-80">
+            {/* Background image covering the entire card */}
+            <img src={item.imageUrl} alt="" class="absolute inset-0 w-full h-full object-cover" />
+            
+            {/* Gradient overlay - from transparent at top to black at bottom */}
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+            
+            {/* Content positioned at the bottom */}
+            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+              <h3 class="text-white text-xl font-bold mb-2">{item.title}</h3>
+              <p class="text-gray-300 text-sm">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+  </div>
+</section>

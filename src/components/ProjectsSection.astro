@@ -1,0 +1,144 @@
+---
+// ProjectsSection.astro
+
+import { getCollection } from 'astro:content';
+
+// Update interface to match your actual content schema
+interface ProjectData {
+  title: string;
+  summary: string;
+  date: Date | string;
+  tags: string[];
+  draft?: boolean;
+  demoUrl?: string;
+  repoUrl?: string;
+  // Duration is optional since it doesn't exist in your actual data
+  duration?: string;
+  image?: string;
+}
+
+interface CollectionEntry {
+  id: string;
+  slug: string;
+  body: string;
+  collection: string;
+  data: ProjectData;
+}
+
+// Fetch projects from content collection
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects
+  .filter(project => !project.data.draft)
+  .sort((a, b) => {
+    const dateA = new Date(a.data.date).getTime();
+    const dateB = new Date(b.data.date).getTime();
+    return dateB - dateA;
+  })
+  .slice(0, 3); // Get the 3 most recent projects
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  projects?: CollectionEntry[];
+}
+
+const { 
+  title = "Recent Projects", 
+  subtitle = "Delivering innovative solutions across industries",
+  projects = featuredProjects 
+} = Astro.props;
+
+// Function to get image path or fallback
+function getProjectImage(project: CollectionEntry, index: number) {
+  if (project.data.image) {
+    return project.data.image;
+  }
+  
+  // Fallback images if none specified
+  const fallbackImages = [
+    "/projects/healthcare-platform.jpg",
+    "/projects/computer-vision.jpg",
+    "/projects/inventory-system.jpg"
+  ];
+  
+  return fallbackImages[index % fallbackImages.length];
+}
+
+// Function to extract project date in a readable format
+function formatProjectDate(project: CollectionEntry) {
+  const date = project.data.date instanceof Date 
+    ? project.data.date 
+    : new Date(project.data.date);
+    
+  // Format: "May 2019"
+  return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+}
+
+// Get duration or calculate from date if not available
+function getProjectDuration(project: CollectionEntry) {
+  // Use duration if available
+  if (project.data.duration) {
+    return project.data.duration;
+  }
+  
+  // Default duration display
+  return formatProjectDate(project);
+}
+---
+
+<section class="bg-custom-blue-gradient py-20 relative">
+  <div class="container mx-auto px-4">
+    <h2 class="font-square text-center text-5xl font-bold mb-6 text-sky-400">{title}</h2>
+    <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+      {subtitle}
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {projects.map((project, index) => (
+        <a href={`/${project.collection}/${project.slug}`} class="relative rounded-xl border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-[500px]">
+          {/* Background image */}
+          <img 
+            src={getProjectImage(project, index)} 
+            alt={project.data.title} 
+            class="absolute inset-0 w-full h-full object-cover" 
+          />
+          
+          {/* Gradient overlay - from transparent at top to black at bottom */}
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+          
+          {/* Content positioned at the bottom */}
+          <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+            <h3 class="text-white text-xl font-bold mb-2">{project.data.title}</h3>
+            <p class="text-gray-300 text-sm mb-4">
+              {project.data.summary}
+            </p>
+            
+            {/* Tags */}
+            <div class="flex flex-wrap gap-2 mb-4">
+              {project.data.tags.slice(0, 4).map(tag => (
+                <span class="px-2 py-1 bg-slate-800 text-xs text-gray-300 rounded uppercase">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            
+            {/* Date/Duration display */}
+            <div class="text-xs text-gray-400">
+              {getProjectDuration(project)}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+    
+    {/* View all projects link */}
+    <div class="flex justify-end mt-8">
+      <a href="/projects" class="text-white flex items-center group">
+        All Projects 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

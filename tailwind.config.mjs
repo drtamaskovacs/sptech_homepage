@@ -7,17 +7,21 @@ export default {
   theme: {
     extend: {
       blue: {
-        '50': '#EBF8FF',
-        '100': '#D6F1FF', 
-        '200': '#A3E0FF',
-        '300': '#68CEFF',
-        '400': '#14B1FF',
-        '500': '#00BDD2',
-        '600': '#007EBD',
-        '700': '#0070A8',
-        '800': '#005885',
-        '900': '#004466',
-        '950': '#00293D',
+        50: "#EBF8FF",
+        100: "#D6F1FF",
+        200: "#A3E0FF",
+        300: "#68CEFF",
+        400: "#14B1FF",
+        500: "#008DD2",
+        600: "#007EBD",
+        700: "#0070A8",
+        800: "#005885",
+        900: "#004466",
+        950: "#00293D",
+      },
+      backgroundImage: {
+        "custom-blue-gradient":
+          "linear-gradient(to bottom, #0F172B 0%, #1D293D 50%, #0F172B 100%)",
       },
       fontFamily: {
         sans: ["Atkinson", ...defaultTheme.fontFamily.sans],
@@ -69,6 +73,9 @@ export default {
           },
         },
       },
+    },
+    container: {
+      padding: "2rem",
     },
   },
   plugins: [require("@tailwindcss/typography")],

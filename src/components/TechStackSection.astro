@@ -1,0 +1,206 @@
+---
+// TechStackSection.astro
+
+// Define interfaces for our data structure
+interface TechnologyItem {
+  name: string;
+  icon: string;
+}
+
+interface TechFolder {
+  name: string;
+  isOpen: boolean;
+  items: TechnologyItem[];
+}
+
+// Example technology data - you can replace this with your actual data
+const techFolders: TechFolder[] = [
+  {
+    name: "Data platform",
+    isOpen: false,
+    items: [
+      { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
+      { name: "MongoDB", icon: "/icons/mongodb.svg" },
+      { name: "Redis", icon: "/icons/redis.svg" },
+    ]
+  },
+  {
+    name: "DevOps + Integration",
+    isOpen: true,
+    items: [
+      { name: "Airbyte", icon: "/icons/airbyte.svg" },
+      { name: "Airflow", icon: "/icons/airflow.svg" },
+      { name: "Docker", icon: "/icons/docker.svg" },
+      { name: "Kubernetes", icon: "/icons/kubernetes.svg" },
+      { name: "Jenkins", icon: "/icons/jenkins.svg" },
+    ]
+  },
+  {
+    name: "Computer Vision",
+    isOpen: false,
+    items: [
+      { name: "PyTorch", icon: "/icons/pytorch.svg" },
+      { name: "TensorFlow", icon: "/icons/tensorflow.svg" },
+      { name: "OpenCV", icon: "/icons/opencv.svg" },
+    ]
+  },
+];
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  folders?: TechFolder[];
+}
+
+const { 
+  title = "We Build with", 
+  subtitle = "Powering our solutions with cutting-edge technologies",
+  folders = techFolders 
+} = Astro.props;
+---
+
+<section class="bg-custom-blue-gradient py-20 relative overflow-hidden">
+  <!-- Grid Background -->
+  <div class="absolute inset-0 opacity-30">
+    <div class="absolute inset-0 grid grid-cols-12 gap-4">
+      {Array(12).fill(0).map(() => (
+        <div class="h-full border-r border-blue-900"></div>
+      ))}
+    </div>
+    <div class="absolute inset-0 grid grid-rows-12 gap-4">
+      {Array(12).fill(0).map(() => (
+        <div class="w-full border-b border-blue-900"></div>
+      ))}
+    </div>
+  </div>
+  
+  <!-- Radial Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-radial from-[#0f172b00] to-[#0f172b] opacity-90"></div>
+  
+  <!-- Background technology icons (faded) -->
+  <div class="absolute inset-0 opacity-20">
+    <img src="/icons/airbyte.svg" class="absolute w-20 h-20 top-20 left-1/4" alt="Tech icon" />
+    <img src="/icons/airflow.svg" class="absolute w-16 h-16 top-40 right-1/3" alt="Tech icon" />
+    <img src="/icons/pytorch.svg" class="absolute w-24 h-24 bottom-32 left-1/3" alt="Tech icon" />
+    <img src="/icons/docker.svg" class="absolute w-20 h-20 top-1/2 right-1/4" alt="Tech icon" />
+    <img src="/icons/kubernetes.svg" class="absolute w-28 h-28 bottom-1/4 right-1/4" alt="Tech icon" />
+  </div>
+
+  <div class="container mx-auto px-4 z-10 relative">
+    <div class="flex flex-col items-center gap-4 mb-16">
+      <h2 class="font-square text-center text-5xl font-bold mb-2 text-sky-400">{title}</h2>
+      <p class="text-center text-gray-300 max-w-xl">
+        {subtitle}
+      </p>
+    </div>
+    
+    <div class="flex justify-center">
+      <!-- Technology Explorer Card -->
+      <div class="w-full max-w-md bg-[#0F172B80] backdrop-blur-sm border border-slate-600 rounded-xl overflow-hidden">
+        <!-- Card Header -->
+        <div class="flex items-center gap-4 p-3 border-b border-slate-600">
+          <div class="flex gap-1.5">
+            <div class="w-2.5 h-2.5 bg-slate-500 rounded-full"></div>
+            <div class="w-2.5 h-2.5 bg-slate-500 rounded-full"></div>
+            <div class="w-2.5 h-2.5 bg-slate-500 rounded-full"></div>
+          </div>
+          <div class="text-white font-medium">We build with</div>
+        </div>
+        
+        <!-- Card Content -->
+        <div class="p-6 space-y-3">
+          {folders.map((folder, index) => (
+            <div class="folder" data-index={index}>
+              <!-- Folder Header -->
+              <div class="folder-header flex items-center gap-3 cursor-pointer hover:bg-slate-700/30 p-1 -ml-1 rounded">
+                <span class="text-slate-400">
+                  {folder.isOpen ? 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon"><path d="m6 9 6 6 6-6"/></svg> : 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon"><path d="m9 18 6-6-6-6"/></svg>
+                  }
+                </span>
+                <span class="text-slate-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>
+                </span>
+                <span class={`folder-label text-sm font-mono font-semibold ${folder.isOpen ? 'text-white' : 'text-slate-400'}`}>
+                  {folder.name}
+                </span>
+              </div>
+              
+              <!-- Folder Content (conditionally shown) -->
+              <div class={`folder-content ml-8 mt-1 space-y-2 ${folder.isOpen ? 'block' : 'hidden'}`}>
+                {folder.items.map((item) => (
+                  <div class="flex items-center gap-3 text-white text-sm font-mono cursor-pointer hover:bg-slate-700/30 p-1 -ml-1 rounded">
+                    <span class="text-slate-400">
+                      <img src={item.icon} alt={item.name} class="w-5 h-5" />
+                    </span>
+                    <span>{item.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Add client-side interactivity for folder toggling
+  document.addEventListener('DOMContentLoaded', () => {
+    const folderHeaders = document.querySelectorAll('.folder-header');
+    
+    folderHeaders.forEach((header) => {
+      header.addEventListener('click', () => {
+        // Get parent folder element
+        const folder = header.closest('.folder');
+        if (!folder) return;
+        
+        // Find content element
+        const folderContent = folder.querySelector('.folder-content');
+        if (!folderContent) return;
+        
+        // Find chevron and label
+        const chevronIcon = header.querySelector('.chevron-icon');
+        const folderLabel = header.querySelector('.folder-label');
+        
+        // Toggle visibility by adding/removing class
+        const isCurrentlyOpen = !folderContent.classList.contains('hidden');
+        
+        if (isCurrentlyOpen) {
+          folderContent.classList.add('hidden');
+          folderContent.classList.remove('block');
+          
+          if (chevronIcon) {
+            chevronIcon.innerHTML = '<path d="m9 18 6-6-6-6"/>';
+          }
+          
+          if (folderLabel) {
+            folderLabel.classList.add('text-slate-400');
+            folderLabel.classList.remove('text-white');
+          }
+        } else {
+          folderContent.classList.remove('hidden');
+          folderContent.classList.add('block');
+          
+          if (chevronIcon) {
+            chevronIcon.innerHTML = '<path d="m6 9 6 6 6-6"/>';
+          }
+          
+          if (folderLabel) {
+            folderLabel.classList.remove('text-slate-400');
+            folderLabel.classList.add('text-white');
+          }
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  /* Add TailwindCSS utility for radial gradient since it's not included by default */
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+</style>

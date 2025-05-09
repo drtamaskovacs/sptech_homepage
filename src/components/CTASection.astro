@@ -1,0 +1,41 @@
+---
+// CTASection.astro
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+const { 
+  title = "Have a Project in mind?", 
+  subtitle = "Ready to transform your data strategy? Let's talk.",
+  buttonText = "Let's connect",
+  buttonLink = "/contact"
+} = Astro.props;
+---
+
+<section class="bg-[#0f172b] py-28 relative">
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center justify-center gap-6 text-center">
+      <!-- Heading -->
+      <h2 class="font-square text-5xl font-bold text-sky-400 mb-2">
+        {title}
+      </h2>
+      
+      <!-- Subtitle -->
+      <p class="text-gray-300 max-w-lg mb-8">
+        {subtitle}
+      </p>
+      
+      <!-- CTA Button -->
+      <a 
+        href={buttonLink}
+        class="inline-flex items-center justify-center px-12 py-4 text-2xl font-square text-white rounded-full border border-sky-600 hover:bg-[#1d293d] transition-colors duration-300"
+      >
+        {buttonText}
+      </a>
+    </div>
+  </div>
+</section>

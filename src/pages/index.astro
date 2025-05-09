@@ -1,22 +1,26 @@
 ---
-import ArrowCard from '@components/ArrowCard';
-import MeteorShower from '@components/MeteorShower.astro';
-import StackCard from '@components/StackCard.astro';
-import TwinklingStars from '@components/TwinklingStars.astro';
-import { SITE, SOCIALS } from '@consts';
-import PageLayout from '@layouts/PageLayout.astro';
-import { getCollection } from 'astro:content';
+import ArrowCard from "@components/ArrowCard";
+import ExpertiseSection from "@components/ExpertiseSection.astro";
+import ProjectsSection from "@components/ProjectsSection.astro";
+import TechStackSection from "@components/TechStackSection.astro";
+import CTASection from "@components/CTASection.astro";
+import MeteorShower from "@components/MeteorShower.astro";
+import StackCard from "@components/StackCard.astro";
+import TwinklingStars from "@components/TwinklingStars.astro";
+import { SITE, SOCIALS } from "@consts";
+import PageLayout from "@layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
 
-const projects = (await getCollection('projects'))
+const projects = (await getCollection("projects"))
   .filter((project) => !project.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
 const stack = [
   {
-    text: 'PostgreSQL',
-    icon: 'postgresql',
-    href: 'https://www.postgresql.org',
+    text: "PostgreSQL",
+    icon: "postgresql",
+    href: "https://www.postgresql.org",
   },
 ];
 ---
@@ -30,7 +34,7 @@ const stack = [
   </div>
 
   <!-- Dark Theme: Stars -->
-  <div class="absolute inset-0 bg-black hidden dark:block">
+  <div class="absolute inset-0 bg-[#0f172b] hidden dark:block">
     <div id="stars1" class="fixed inset-0"></div>
     <div id="stars2" class="fixed inset-0"></div>
     <div id="stars3" class="fixed inset-0"></div>
@@ -48,205 +52,25 @@ const stack = [
 
   <!-- HERO -->
   <section class="relative h-screen w-full">
-    <div
-      id="planetcont"
-      class="animate absolute inset-0 top-1/4 overflow-hidden"
-    >
-      <div
-        id="crescent"
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%"
-      >
-        <div
-          id="planet"
-          class="w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center"
-        >
-          <div
-            id="blur"
-            class="w-full h-20 rounded-full bg-neutral-900/25 dark:bg-white/25 blur-3xl"
-          >
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="animate absolute h-full w-full flex items-center justify-center"
-    >
-      <div class="relative w-full h-full flex items-center justify-center">
-        <div class="p-5 text-center">
-          <p
-            class="animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white"
-          >
-            SP Technologies
-          </p>
-          <p class="animated text-sm md:text-base lg:text-lg opacity-75">
-            Consult with your data
-          </p>
-          <div
-            id="ctaButtons"
-            class="animated flex flex-wrap gap-4 justify-center mt-5"
-          >
-            <a
-              href="/projects"
-              class="py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend"
-            >
-              View our work
-            </a>
-          </div>
+    <img src="bg.png" class="absolute object-cover h-full w-full" />
+    <div class="animate h-full w-full flex items-center container mx-auto">
+      <div class="space-y-6">
+        <p class="font-square animated text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+          Consult with
+          <span class="text-sky-400"><br />your data</span>
+        </p>
+        <p class="text-base md:text-lg lg:text-xl max-w-2xl">We specialize in building and operating advanced data platforms, system integration, data science, and computer vision solutions.</p>
+        <div id="ctaButtons" class="animated flex flex-wrap gap-4 mt-5">
+          <a href="/projects" class="py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend">
+            View our work
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="relative bg-white dark:bg-black">
-    <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
-      <!-- About Section -->
-      <section class="animate">
-        <article>
-          <h3>Our Mission</h3>
-          <p>
-            SP Technologies is a dynamic company specializing in <b
-              ><i>building and operating advanced data platforms</i></b
-            >, <b><i>system integration</i></b>, <b><i>data science</i></b>, and <b
-              ><i>computer vision</i></b
-            >. Our team of <b><i>innovative experts</i></b>, <b
-              ><i>passionate analysts</i></b
-            >, and <b><i>skilled engineers</i></b> is dedicated to creating end-to-end
-            data solutions.
-          </p>
-          <p>
-            We thrive on transforming complex technological challenges into
-            actionable solutions. Our team is motivated by cutting-edge projects
-            that require in-depth research and creative problem-solving,
-            focusing on the entire data lifecycle from infrastructure to
-            insights.
-          </p>
-
-          <h3>Our Expertise</h3>
-          <p>
-            Our comprehensive approach encompasses four interconnected areas:
-          </p>
-          <ol>
-            <li>
-              <b>Data Platforms:</b> We build and operate sophisticated data infrastructure,
-              including data hub, data mesh, real-time processing engines, and scalable
-              storage solutions, forming the backbone of our services.
-            </li>
-            <li>
-              <b>System Integration:</b> We seamlessly integrate our data platforms
-              with existing systems and external data sources, specializing in healthcare
-              solutions like electronic patient dossiers (EPD), eHealth, and mHealth,
-              to enhance operational efficiency and data flow.
-            </li>
-            <li>
-              <b>Data Science:</b> Leveraging our robust data platforms, we perform
-              advanced analytics, including business intelligence, data mining, and
-              machine learning, to extract valuable insights and enable data-driven
-              decision-making.
-            </li>
-            <li>
-              <b>Computer Vision:</b> Building upon our integrated data infrastructure,
-              we develop cutting-edge solutions for visual data analysis, employing
-              advanced image and video processing techniques, neural networks, deep
-              learning, and AI.
-            </li>
-          </ol>
-          <p>
-            From foundational data architecture to sophisticated AI-powered
-            applications, we deliver comprehensive, scalable solutions that
-            address the entire data value chain.
-          </p>
-
-          <h3>Our Team</h3>
-          <p>
-            SP Technologies proudly brings together talented professionals from
-            top universities in Switzerland and near-shore locations. Our
-            diverse and highly skilled workforce drives innovation across all
-            four of our core competencies, ensuring seamless integration between
-            our data platforms and the advanced analytics and vision
-            capabilities we build on top of them.
-          </p>
-        </article>
-      </section>
-
-      <!-- Tech Stack Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">We build with</p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
-            {
-              stack.map((item) => (
-                <StackCard text={item.text} icon={item.icon} href={item.href} />
-              ))
-            }
-          </div>
-          <div>
-            Powering our advanced analytics and AI solutions with cutting-edge
-            technologies
-          </div>
-        </div>
-      </section>
-
-      <!-- Project Preview Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
-              Recent projects
-            </p>
-            <a
-              href="/projects"
-              class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend"
-            >
-              <span
-                class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend"
-              >
-                All projects
-              </span>
-            </a>
-          </div>
-          <ul class="space-y-4">
-            {
-              projects.map((project) => (
-                <li>
-                  <ArrowCard entry={project} />
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="animate">
-        <div>
-          <p class="font-semibold text-black dark:text-white">Let's Connect</p>
-          <p>Reach out to us via email.</p>
-          <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
-            {
-              SOCIALS.map((social) => (
-                <div>
-                  <div class="col-span-1 flex items-center gap-1">
-                    <span class="whitespace-nowrap truncate">
-                      {social.NAME}
-                    </span>
-                  </div>
-                  <div class="col-span-3 truncate">
-                    <a
-                      href={social.HREF}
-                      target="_blank"
-                      class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend"
-                    >
-                      <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                        {social.TEXT}
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
+  <ExpertiseSection />
+  <TechStackSection />
+  <ProjectsSection />
+  <CTASection />
 </PageLayout>
