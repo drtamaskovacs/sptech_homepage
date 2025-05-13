@@ -3,38 +3,23 @@ import { SITE } from "@consts";
 import Container from "@components/Container.astro";
 ---
 
-<footer class="relative bg-slate-900 text-white py-6 border-t-slate-500 border-t">
+<footer class="relative bg-slate-900 text-white py-8 ">
   <div class="container mx-auto">
     <div class="flex flex-col gap-4">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
-          <a href="/" class="flex items-center">
-            <svg class="size-8 fill-white">
-              <use href="/brand.svg#brand"></use>
-            </svg>
-            <span class="ml-2 font-medium">SP TECHNOLOGIES</span>
+          <a href="/">
+            <img src="/horizontal_white_no_slogan.svg" alt="{SITE.TITLE}" class="w-56" />
           </a>
         </div>
-        
+
         <div class="flex gap-6 text-sm">
-          <a 
-            href="/legal/terms" 
-            class="text-white hover:text-gray-300 transition-colors duration-300"
-          >
-            Terms
-          </a>
-          <a 
-            href="/legal/privacy" 
-            class="text-white hover:text-gray-300 transition-colors duration-300"
-          >
-            Privacy
-          </a>
+          <a href="/legal/terms" class="text-white hover:text-gray-300 transition-colors duration-300"> Terms </a>
+          <a href="/legal/privacy" class="text-white hover:text-gray-300 transition-colors duration-300"> Privacy </a>
         </div>
       </div>
-      
-      <div class="text-center text-sm text-gray-400 pt-2">
-        &copy; 2025 SP Technologies | All rights reserved
-      </div>
+
+      <div class="text-center text-sm text-gray-400 pt-2">&copy; 2025 SP Technologies | All rights reserved</div>
     </div>
   </div>
 </footer>

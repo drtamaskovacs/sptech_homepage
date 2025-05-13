@@ -26,13 +26,6 @@ const stack = [
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
-  <!-- Light Mode: Particles -->
-  <div class="absolute inset-0 block dark:hidden">
-    <div id="particles1" class="fixed inset-0"></div>
-    <div id="particles2" class="fixed inset-0"></div>
-    <div id="particles3" class="fixed inset-0"></div>
-  </div>
-
   <!-- Dark Theme: Stars -->
   <div class="absolute inset-0 bg-[#0f172b] hidden dark:block">
     <div id="stars1" class="fixed inset-0"></div>
@@ -42,9 +35,9 @@ const stack = [
 
   <!-- Dark Theme: Twinkling Stars / Metors -->
   <div id="galaxy" class="fixed inset-0">
-    <div class="hidden dark:block">
-      <TwinklingStars />
-      <MeteorShower />
+    <div>
+      <TwinklingStars/>
+      <MeteorShower/>
     </div>
   </div>
 

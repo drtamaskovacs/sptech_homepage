@@ -46,7 +46,7 @@ const {
 ---
 
 <section class="bg-custom-blue-gradient relative">
-  <div class="container mx-auto px-4 py-32">
+  <div class="container mx-auto py-32">
     <h2 class="font-square text-center text-5xl font-bold mb-6 text-sky-400">{title}</h2>
     <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
       {subtitle}
@@ -54,7 +54,7 @@ const {
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {items.map((item) => (
-          <div class="relative rounded-xl border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-80">
+          <div class="relative rounded-lg border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-80">
             {/* Background image covering the entire card */}
             <img src={item.imageUrl} alt="" class="absolute inset-0 w-full h-full object-cover" />
             

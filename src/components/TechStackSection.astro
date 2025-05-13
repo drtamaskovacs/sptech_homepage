@@ -59,7 +59,7 @@ const {
 } = Astro.props;
 ---
 
-<section class="bg-custom-blue-gradient py-20 relative overflow-hidden">
+<section class="bg-custom-blue-gradient py-32 relative overflow-hidden">
   <!-- Grid Background -->
   <div class="absolute inset-0 opacity-30">
     <div class="absolute inset-0 grid grid-cols-12 gap-4">
@@ -86,7 +86,7 @@ const {
     <img src="/icons/kubernetes.svg" class="absolute w-28 h-28 bottom-1/4 right-1/4" alt="Tech icon" />
   </div>
 
-  <div class="container mx-auto px-4 z-10 relative">
+  <div class="container mx-auto z-10 relative">
     <div class="flex flex-col items-center gap-4 mb-16">
       <h2 class="font-square text-center text-5xl font-bold mb-2 text-sky-400">{title}</h2>
       <p class="text-center text-gray-300 max-w-xl">
@@ -96,7 +96,7 @@ const {
     
     <div class="flex justify-center">
       <!-- Technology Explorer Card -->
-      <div class="w-full max-w-md bg-[#0F172B80] backdrop-blur-sm border border-slate-600 rounded-xl overflow-hidden">
+      <div class="w-full max-w-md bg-[#0F172B80] backdrop-blur-sm border border-slate-600 rounded-lg overflow-hidden">
         <!-- Card Header -->
         <div class="flex items-center gap-4 p-3 border-b border-slate-600">
           <div class="flex gap-1.5">
@@ -112,25 +112,25 @@ const {
           {folders.map((folder, index) => (
             <div class="folder" data-index={index}>
               <!-- Folder Header -->
-              <div class="folder-header flex items-center gap-3 cursor-pointer hover:bg-slate-700/30 p-1 -ml-1 rounded">
-                <span class="text-slate-400">
+              <div class="folder-header flex items-center gap-3 cursor-pointer hover:bg-slate-700/30 p-1 -ml-1 rounded transition-colors duration-200">
+                <span class="text-slate-400 transition-transform duration-300">
                   {folder.isOpen ? 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon"><path d="m6 9 6 6 6-6"/></svg> : 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon transform rotate-90"><path d="m9 18 6-6-6-6"/></svg> : 
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon"><path d="m9 18 6-6-6-6"/></svg>
                   }
                 </span>
                 <span class="text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>
                 </span>
-                <span class={`folder-label text-sm font-mono font-semibold ${folder.isOpen ? 'text-white' : 'text-slate-400'}`}>
+                <span class={`folder-label text-sm font-mono font-semibold transition-colors duration-200 ${folder.isOpen ? 'text-white' : 'text-slate-400'}`}>
                   {folder.name}
                 </span>
               </div>
               
-              <!-- Folder Content (conditionally shown) -->
-              <div class={`folder-content ml-8 mt-1 space-y-2 ${folder.isOpen ? 'block' : 'hidden'}`}>
+              <!-- Folder Content with transition -->
+              <div class={`folder-content ml-8 mt-1 space-y-2 transition-all duration-300 ease-in-out overflow-hidden ${folder.isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 {folder.items.map((item) => (
-                  <div class="flex items-center gap-3 text-white text-sm font-mono cursor-pointer hover:bg-slate-700/30 p-1 -ml-1 rounded">
+                  <div class="flex items-center gap-3 text-white text-sm font-mono cursor-pointer hover:bg-slate-700/30 p-1 -ml-1 rounded transition-colors duration-200">
                     <span class="text-slate-400">
                       <img src={item.icon} alt={item.name} class="w-5 h-5" />
                     </span>
@@ -165,15 +165,16 @@ const {
         const chevronIcon = header.querySelector('.chevron-icon');
         const folderLabel = header.querySelector('.folder-label');
         
-        // Toggle visibility by adding/removing class
-        const isCurrentlyOpen = !folderContent.classList.contains('hidden');
+        // Toggle visibility using CSS classes for transitions
+        const isCurrentlyOpen = folderContent.classList.contains('max-h-96');
         
         if (isCurrentlyOpen) {
-          folderContent.classList.add('hidden');
-          folderContent.classList.remove('block');
+          // Closing the folder
+          folderContent.classList.remove('max-h-96', 'opacity-100');
+          folderContent.classList.add('max-h-0', 'opacity-0');
           
           if (chevronIcon) {
-            chevronIcon.innerHTML = '<path d="m9 18 6-6-6-6"/>';
+            chevronIcon.classList.remove('rotate-90');
           }
           
           if (folderLabel) {
@@ -181,11 +182,12 @@ const {
             folderLabel.classList.remove('text-white');
           }
         } else {
-          folderContent.classList.remove('hidden');
-          folderContent.classList.add('block');
+          // Opening the folder
+          folderContent.classList.remove('max-h-0', 'opacity-0');
+          folderContent.classList.add('max-h-96', 'opacity-100');
           
           if (chevronIcon) {
-            chevronIcon.innerHTML = '<path d="m6 9 6 6 6-6"/>';
+            chevronIcon.classList.add('rotate-90');
           }
           
           if (folderLabel) {
@@ -202,5 +204,10 @@ const {
   /* Add TailwindCSS utility for radial gradient since it's not included by default */
   .bg-gradient-radial {
     background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+  
+  /* Initial state for all folder content */
+  .folder-content {
+    will-change: max-height, opacity;
   }
 </style>

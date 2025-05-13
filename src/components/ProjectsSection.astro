@@ -86,8 +86,8 @@ function getProjectDuration(project: CollectionEntry) {
 }
 ---
 
-<section class="bg-custom-blue-gradient py-20 relative">
-  <div class="container mx-auto px-4">
+<section class="bg-custom-blue-gradient py-32 relative">
+  <div class="container mx-auto">
     <h2 class="font-square text-center text-5xl font-bold mb-6 text-sky-400">{title}</h2>
     <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
       {subtitle}
@@ -95,7 +95,7 @@ function getProjectDuration(project: CollectionEntry) {
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {projects.map((project, index) => (
-        <a href={`/${project.collection}/${project.slug}`} class="relative rounded-xl border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-[500px]">
+        <a href={`/${project.collection}/${project.slug}`} class="relative rounded-lg border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-[500px]">
           {/* Background image */}
           <img 
             src={getProjectImage(project, index)} 

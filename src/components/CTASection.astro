@@ -12,11 +12,11 @@ const {
   title = "Have a Project in mind?", 
   subtitle = "Ready to transform your data strategy? Let's talk.",
   buttonText = "Let's connect",
-  buttonLink = "/contact"
+  buttonLink = "mailto:info@sptech.ch"
 } = Astro.props;
 ---
 
-<section class="bg-[#0f172b] py-28 relative">
+<section class="bg-slate-900 py-28 relative border-y-slate-500 border-y mix-blend-lighten">
   <div class="container mx-auto">
     <div class="flex flex-col items-center justify-center gap-6 text-center">
       <!-- Heading -->
@@ -32,7 +32,7 @@ const {
       <!-- CTA Button -->
       <a 
         href={buttonLink}
-        class="inline-flex items-center justify-center px-12 py-4 text-2xl font-square text-white rounded-full border border-sky-600 hover:bg-[#1d293d] transition-colors duration-300"
+        class="inline-flex items-center justify-center px-12 py-4 text-2xl font-square text-white rounded border border-sky-600 hover:bg-[#1d293d] transition-colors duration-300"
       >
         {buttonText}
       </a>
