@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <defs>
+        <linearGradient id="L509950000078D4161380DA533C91E582559CEC1005EA0EF.grad" x1="50.00%" x2="50.00%" y1="99.69%" y2="0.19%">
+            <stop stop-color="#0078D4" offset="0%"/>
+            <stop offset="16%" stop-color="#1380DA"/>
+            <stop offset="53%" stop-color="#3C91E5"/>
+            <stop offset="82%" stop-color="#559CEC"/>
+            <stop offset="100%" stop-color="#5EA0EF"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <g>
+                <path d="M 100 18.7286 L 100 79.5286 L 75 100 L 36.25 85.8929 L 36.25 99.8786 L 14.3143 71.2143 L 78.25 76.2143 L 78.25 21.4643 L 100 18.7286 Z M 78.6857 21.7857 L 42.8143 0 L 42.8143 14.2929 L 9.8714 23.9714 L 0 36.6429 L 0 65.4214 L 14.1286 71.6571 L 14.1286 34.7786 L 78.6857 21.7929 Z" fill="url(#L509950000078D4161380DA533C91E582559CEC1005EA0EF.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="50"/>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" stroke-width="1" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -36,21 +36,20 @@ const stack = [
   <!-- Dark Theme: Twinkling Stars / Metors -->
   <div id="galaxy" class="fixed inset-0">
     <div>
-      <TwinklingStars/>
-      <MeteorShower/>
+      <TwinklingStars />
+      <MeteorShower />
     </div>
   </div>
 
   <script is:inline src="/js/bg.js"></script>
 
-  <!-- HERO -->
   <section class="relative h-screen w-full">
     <img src="bg.png" class="absolute object-cover h-full w-full" />
     <div class="animate h-full w-full flex items-center container mx-auto">
       <div class="space-y-6">
         <p class="font-square animated text-5xl md:text-6xl lg:text-7xl font-bold text-white">
           Consult with
-          <span class="text-sky-400"><br />your data</span>
+          <span class="text-blue-400"><br />your data</span>
         </p>
         <p class="text-base md:text-lg lg:text-xl max-w-2xl">We specialize in building and operating advanced data platforms, system integration, data science, and computer vision solutions.</p>
         <div id="ctaButtons" class="animated flex flex-wrap gap-4 mt-5">
@@ -59,6 +58,13 @@ const stack = [
           </a>
         </div>
       </div>
+    </div>
+
+    <!-- Scroll Down Indicator with Chevron -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
     </div>
   </section>
 

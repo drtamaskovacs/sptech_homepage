@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100.00004665835627">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g>
+        <g>
+            <g transform="translate(10.9375 0)">
+                <g>
+                    <g transform="translate(0 37.5)">
+                        <path d="M 0 0 L 0 52.4688 L 37.2969 9.5 C 25.8558 3.2614 13.0314 -0.0052 0 0 Z" fill="#343741" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1"/>
+                    </g>
+                    <g>
+                        <path d="M 0 0 L 0 37.5 C 13.0328 37.4997 25.8572 40.7716 37.2969 47.0156 L 78.125 0 Z" fill="#f04e98" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1"/>
+                    </g>
+                    <g transform="translate(3.7031 52.0312)">
+                        <path d="M 41.6094 0 L 0 47.9688 L 72.8594 47.9688 C 68.8839 28.6067 57.7172 11.4713 41.6094 0.0156 Z" fill="#00bfb3" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1"/>
+                    </g>
+                </g>
+            </g>
+            <g class="l0rzlnx25sa.lay" v:layer_name="Collect Layer">
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" stroke-width="1" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

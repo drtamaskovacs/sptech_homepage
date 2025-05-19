@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100.0000494563144 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <defs>
+        <linearGradient id="L-050100500B77AF4100773ADC.grad" x1="-0.00%" x2="100.00%" y1="50.00%" y2="50.00%">
+            <stop stop-color="#B77AF4" offset="0%"/>
+            <stop offset="100%" stop-color="#773ADC"/>
+        </linearGradient>
+        <linearGradient id="L050100500B77AF4100773ADC.grad" x1="0.00%" x2="100.00%" y1="50.01%" y2="50.01%">
+            <stop stop-color="#B77AF4" offset="0%"/>
+            <stop offset="100%" stop-color="#773ADC"/>
+        </linearGradient>
+        <linearGradient id="L-05099500B77AF4100773ADC.grad" x1="-0.00%" x2="99.84%" y1="50.00%" y2="50.00%">
+            <stop stop-color="#B77AF4" offset="0%"/>
+            <stop offset="100%" stop-color="#773ADC"/>
+        </linearGradient>
+        <linearGradient id="L-049100490B77AF4100773ADC.grad" x1="-0.00%" x2="100.00%" y1="49.90%" y2="49.90%">
+            <stop stop-color="#B77AF4" offset="0%"/>
+            <stop offset="100%" stop-color="#773ADC"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <g transform="translate(0 6.0269)">
+                <g>
+                    <g transform="translate(16.2637 0)">
+                        <path d="M 15.8157 0 L 0 2.9299 L 0 24.5057 L 15.8157 27.8765 L 31.6882 21.519 L 31.6882 5.4189 L 15.8157 0 Z" fill="url(#L-050100500B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(16.2637 0.2205)">
+                        <path d="M 0 2.7094 L 0 24.2853 L 15.9792 27.6561 L 15.9792 0 L 0 2.7094 Z M 6.7487 22.6212 L 2.2685 21.7394 L 2.2685 5.1415 L 6.7487 4.4304 L 6.7487 22.6212 Z M 13.7178 23.9013 L 8.5692 23.0621 L 8.5692 4.0961 L 13.7178 3.2072 L 13.7178 23.9013 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(50.4978 0.2702)">
+                        <path d="M 15.8157 0.0071 L 0 2.937 L 0 24.5057 L 15.8157 27.8836 L 31.6385 21.4692 L 31.6385 5.4189 L 15.8157 0 Z" fill="url(#L050100500B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(50.4978 0.4978)">
+                        <path d="M 0 2.7094 L 0 24.2782 L 15.8726 27.6561 L 15.8726 0 L 0 2.7094 Z M 6.6918 22.6212 L 2.2116 21.7394 L 2.2116 5.1415 L 6.6918 4.4304 L 6.6918 22.6141 Z M 13.6609 23.8942 L 8.5265 23.0621 L 8.5265 4.0961 L 13.668 3.1503 L 13.668 23.8942 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(0.0569 29.7539)">
+                        <path d="M 15.8157 0 L 0 2.937 L 0 24.5057 L 15.8157 27.8765 L 31.6882 21.519 L 31.6882 5.426 L 15.8157 0 Z" fill="url(#L-05099500B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(0 29.8108)">
+                        <path d="M 0 2.8801 L 0 24.2853 L 15.9863 27.6561 L 15.9863 0 L 0 2.8801 Z M 6.6918 22.8417 L 2.2116 21.903 L 2.2116 5.3193 L 6.6918 4.5442 L 6.6918 22.8488 Z M 13.7178 24.2853 L 8.5763 23.4533 L 8.5763 4.2597 L 13.7178 3.3779 L 13.7178 24.2853 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(34.1843 29.5335)">
+                        <path d="M 15.8157 0 L 0 2.937 L 0 24.5057 L 15.8157 27.9334 L 31.6313 21.519 L 31.6313 5.426 L 15.8157 0 Z" fill="url(#L-049100490B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(34.1843 29.8108)">
+                        <path d="M 0 2.6596 L 0 24.2782 L 15.9295 27.6561 L 15.9295 0 L 0 2.6596 Z M 6.6847 22.6212 L 2.2045 21.6825 L 2.2045 5.0917 L 6.6847 4.3095 L 6.6847 22.6212 Z M 13.6538 23.8373 L 8.5123 23.0124 L 8.5123 4.0393 L 13.6609 3.1574 L 13.6609 23.8373 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(68.3046 29.8108)">
+                        <path d="M 15.8228 0 L 0 2.9299 L 0 24.5057 L 15.8228 27.8765 L 31.6954 21.519 L 31.6954 5.4189 L 15.8228 0 Z" fill="url(#L050100500B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(68.3046 29.8108)">
+                        <path d="M 0 2.9299 L 0 24.2853 L 15.9863 27.6561 L 15.9863 0 L 0 2.9299 Z M 6.7558 22.8986 L 2.2756 21.9599 L 2.2756 5.3691 L 6.7558 4.5868 L 6.7558 22.8986 Z M 13.7249 24.1146 L 8.5763 23.2897 L 8.5763 4.3166 L 13.7178 3.4277 L 13.7178 24.1217 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(15.8726 59.8421)">
+                        <path d="M 15.8228 0 L 0 2.8801 L 0 24.4489 L 15.8228 27.8765 L 31.6954 21.4621 L 31.6954 5.426 L 15.8228 0 Z" fill="url(#L050100500B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(15.8726 59.6216)">
+                        <path d="M 0 3.1006 L 0 24.6693 L 15.9863 28.1041 L 15.9863 0 L 0 3.1006 Z M 6.7558 23.0693 L 2.2756 22.1306 L 2.2756 5.5326 L 6.7558 4.7575 L 6.7558 23.0693 Z M 13.7249 24.3422 L 8.5763 23.5102 L 8.5763 4.4873 L 13.7178 3.5983 L 13.7178 24.3422 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(50.0569 60.0697)">
+                        <path d="M 15.8157 0 L 0 2.9299 L 0 24.4987 L 15.8157 27.8765 L 31.6882 21.5119 L 31.6882 5.426 L 15.8157 0.0071 Z" fill="url(#L050100500B77AF4100773ADC.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                    <g transform="translate(50.0569 60.283)">
+                        <path d="M 0 2.7165 L 0 24.2853 L 15.9863 27.6632 L 15.9863 0 L 0 2.7165 Z M 6.7487 22.6852 L 2.2685 21.7394 L 2.2685 5.1486 L 6.7487 4.3735 L 6.7487 22.6852 Z M 13.7178 23.8942 L 8.5692 23.0693 L 8.5692 4.0961 L 13.7178 3.2143 L 13.7178 23.9013 Z" fill="#341a6e" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="49.99885561701316"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

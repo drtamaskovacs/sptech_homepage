@@ -6,18 +6,20 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      blue: {
-        50: "#EBF8FF",
-        100: "#D6F1FF",
-        200: "#A3E0FF",
-        300: "#68CEFF",
-        400: "#14B1FF",
-        500: "#008DD2",
-        600: "#007EBD",
-        700: "#0070A8",
-        800: "#005885",
-        900: "#004466",
-        950: "#00293D",
+      colors: {
+        blue: {
+          50: "#EBF8FF",
+          100: "#D6F1FF",
+          200: "#A3E0FF",
+          300: "#68CEFF",
+          400: "#14B1FF",
+          500: "#008DD2",
+          600: "#007EBD",
+          700: "#0070A8",
+          800: "#005885",
+          900: "#004466",
+          950: "#00293D",
+        },
       },
       backgroundImage: {
         "custom-blue-gradient":

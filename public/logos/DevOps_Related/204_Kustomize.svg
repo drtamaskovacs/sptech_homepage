@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g>
+        <g>
+            <g transform="translate(5.9353 0)">
+                <g>
+                    <g>
+                        <path d="M 6.1151 0 L 65.4676 0 C 68.705 0 71.5827 2.518 71.5827 6.1151 L 71.5827 77.3381 C 71.5827 80.9353 68.705 83.4532 65.4676 83.4532 L 6.1151 83.4532 C 2.518 83.4532 0 80.9353 0 77.3381 L 0 6.1151 C 0 2.518 2.518 0 6.1151 0 Z" fill="#3e5b9f" fill-opacity="0.25098" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.555555555555556"/>
+                    </g>
+                    <g transform="translate(8.2734 8.2734)">
+                        <path d="M 6.1151 0 L 65.4676 0 C 69.0648 0 71.5827 2.8777 71.5827 6.1151 L 71.5827 77.6978 C 71.5827 80.9353 69.0648 83.4532 65.4676 83.4532 L 6.1151 83.4532 C 2.8777 83.4532 0 80.9353 0 77.6978 L 0 6.1151 C 0 2.8777 2.8777 0 6.1151 0 Z" fill="#3e5b9f" fill-opacity="0.501961" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.555555555555556"/>
+                    </g>
+                    <g transform="translate(16.5468 16.5468)">
+                        <path d="M 0 6.1151 C 0 2.7273 2.7273 0 6.1151 0 L 65.4676 0 C 68.8554 0 71.5827 2.7273 71.5827 6.1151 L 71.5827 77.3381 C 71.5827 80.7259 68.8554 83.4532 65.4676 83.4532 L 6.1151 83.4532 C 2.7273 83.4532 0 80.7259 0 77.3381 Z" fill="#3e5b9f" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.555555555555556"/>
+                    </g>
+                    <g transform="translate(37.7698 42.0863)">
+                        <path d="M 7.1942 0 L 0 0 L 0 35.9712 L 7.1942 35.9712 L 7.1942 26.6187 L 12.5899 20.5036 L 22.6619 35.9712 L 32.0144 35.9712 L 17.6259 15.1079 L 31.295 0 L 21.9424 0 L 7.1942 16.9065 Z" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.555555555555556"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

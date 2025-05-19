@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100.00000000000011 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g>
+        <g>
+            <g transform="translate(0 4.0395)">
+                <g>
+                    <g transform="translate(21.7264 0)">
+                        <path d="M 56.5459 0 L 78.2736 45.9598 L 56.5459 91.9209 L 38.0488 91.9209 L 59.7765 45.9598 L 38.0488 0 L 56.5459 0 Z M 21.3261 39.0457 L 29.1697 24.1482 L 28.2743 20.6798 L 18.4971 0 L 0 0 L 19.0258 40.2435 L 21.3261 39.0457 Z M 28.2743 68.1564 L 21.4952 52.8902 L 19.0258 51.6774 L 0 91.9209 L 18.4971 91.9209 L 28.2743 71.2398 L 28.2743 68.1564 Z" fill="#40b4e5" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.1250029802350117"/>
+                    </g>
+                    <g>
+                        <path d="M 59.7765 91.9209 L 38.0488 45.9598 L 59.7765 0 L 78.2737 0 L 56.5459 45.9598 L 78.2737 91.9209 L 59.7765 91.9209 Z M 21.7277 91.9209 L 0 45.9598 L 21.7277 0 L 40.2248 0 L 18.4971 45.9598 L 40.2248 91.9209 L 21.7277 91.9209 Z" fill="#003764" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.1250029802350117"/>
+                    </g>
+                </g>
+            </g>
+            <g class="l0rzlnx25sa.lay" transform="translate(0 0)" v:layer_name="Collect Layer">
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>
