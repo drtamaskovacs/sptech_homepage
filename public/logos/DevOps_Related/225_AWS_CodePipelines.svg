@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="L0100100002E27AD100527FFF.grad">
+            <stop stop-color="#2E27AD" offset="0%"/>
+            <stop stop-color="#527FFF" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <g>
+                <path d="M 0 0 L 100 0 L 100 100 L 0 100 Z" fill="url(#L0100100002E27AD100527FFF.grad)" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(16.25 16.25)">
+                <path d="M 21.25 22.5 L 27.5 22.5 L 27.5 20 L 21.25 20 L 21.25 22.5 Z M 29.5838 60.2075 L 27.2713 59.2587 L 36.7612 36.1063 L 39.0738 37.055 L 29.5838 60.2075 Z M 40.7138 53.475 L 47.585 47.4475 L 40.7188 41.4963 L 42.3575 39.6062 L 50.3063 46.4975 C 50.5788 46.7338 50.7363 47.0775 50.7375 47.4388 C 50.7388 47.8 50.5837 48.1438 50.3113 48.3825 L 42.3625 55.355 L 40.7138 53.475 Z M 15.6363 47.56 C 15.6338 47.1988 15.7875 46.855 16.0588 46.6163 L 23.98 39.6137 L 25.635 41.4875 L 18.7863 47.5413 L 25.5975 53.4125 L 23.9637 55.3063 L 16.0688 48.4988 C 15.7963 48.2637 15.6387 47.9213 15.6363 47.56 L 15.6363 47.56 Z M 61.9188 27.5 L 6.8313 27.5 C 4.4438 27.5 2.5 25.5575 2.5 23.17 L 2.5 22.5 L 17.5 22.5 L 17.5 20 L 2.5 20 L 2.5 6.83 C 2.5 4.4425 4.4438 2.5 6.8313 2.5 L 61.9188 2.5 C 64.3063 2.5 66.25 4.4425 66.25 6.83 L 66.25 20 L 31.25 20 L 31.25 22.5 L 66.25 22.5 L 66.25 23.17 C 66.25 25.5575 64.3063 27.5 61.9188 27.5 L 61.9188 27.5 Z M 11.25 66.25 L 56.25 66.25 L 56.25 30 L 11.25 30 L 11.25 66.25 Z M 61.9188 0 L 6.8313 0 C 3.0638 0 0 3.0638 0 6.83 L 0 23.17 C 0 26.9363 3.0638 30 6.8313 30 L 8.75 30 L 8.75 67.5 C 8.75 68.19 9.3088 68.75 10 68.75 L 57.5 68.75 C 58.1913 68.75 58.75 68.19 58.75 67.5 L 58.75 30 L 61.9188 30 C 65.6863 30 68.75 26.9363 68.75 23.17 L 68.75 6.83 C 68.75 3.0638 65.6863 0 61.9188 0 L 61.9188 0 Z" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+        </g>
+    </g>
+</svg>

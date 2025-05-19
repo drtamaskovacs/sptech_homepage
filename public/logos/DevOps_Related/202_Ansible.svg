@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g>
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M 100 50 C 100 77.6156 77.6156 100 50 100 C 22.3844 100 0 77.6156 0 50 C 0 22.3844 22.3875 0 50 0 C 77.6125 0 100 22.3875 100 50" fill="#1a1918" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+                    </g>
+                    <g transform="translate(25.8125 19.825)">
+                        <path d="M 25.0313 10.7188 L 37.9688 42.6531 L 18.425 27.2578 Z M 48 50.0109 L 28.1125 2.1125 C 27.5438 0.7313 26.3938 0 25.0297 0 C 23.6656 0 22.4297 0.7313 21.8609 2.1125 L 0 54.65 L 7.4734 54.65 L 16.1203 32.9891 L 41.925 53.8375 C 42.9625 54.6766 43.7125 55.0563 44.6859 55.0563 C 46.6359 55.0563 48.3391 53.5937 48.3391 51.4844 C 48.3391 51.1406 48.2172 50.5938 47.9984 50.0094 Z" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

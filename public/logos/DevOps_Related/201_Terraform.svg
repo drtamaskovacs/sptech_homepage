@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100.00003189966947">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g>
+        <g>
+            <g transform="translate(5.9875 0)">
+                <g>
+                    <g transform="translate(30.332 17.6333)">
+                        <path d="M 27.335 82.3667 L 27.335 50.8073 L 0 35.0212 L 0 66.5806 Z M 27.335 47.3583 L 0 31.5722 L 0 0 L 27.335 15.7861 Z" fill="#5c4ee5" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.8267668544528037"/>
+                    </g>
+                    <g transform="translate(60.677 17.6205)">
+                        <path d="M 27.348 31.5722 L 27.348 0 L 0 15.7861 L 0 47.3583 Z" fill="#4040b2" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.8267668544528037"/>
+                    </g>
+                    <g>
+                        <path d="M 27.335 47.3583 L 27.335 15.7861 L 0 0 L 0 31.5722 Z" fill="#5c4ee5" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.8267668544528037"/>
+                    </g>
+                    <g transform="translate(76.4502 79.2791)">
+                        <path d="M 0.00001 0.00001" fill="#5c4ee5" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.8267668544528037"/>
+                    </g>
+                    <g transform="translate(30.332 52.6546)">
+                        <path d="M 0.00001 0.00001" fill="#5c4ee5" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.8267668544528037"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

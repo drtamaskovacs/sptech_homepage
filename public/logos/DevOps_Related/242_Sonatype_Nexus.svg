@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g>
+        <g>
+            <g transform="translate(6.5217 0)">
+                <g>
+                    <g transform="translate(37.6812 36.2319)">
+                        <path d="M 7.2464 27.5362 L 7.2464 10.1449 C 8.6957 8.6957 11.5942 7.2464 14.4927 7.2464 C 14.4927 7.2464 15.942 7.2464 15.942 7.2464 L 15.942 0 C 13.0435 0 8.6957 1.4493 7.2464 4.3478 L 7.2464 1.4493 L 0 1.4493 L 0 27.5362 L 7.2464 27.5362 Z" fill="#29b473" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6.507235943899715"/>
+                    </g>
+                    <g>
+                        <path d="M 0 24.6377 L 0 73.9131 L 43.4783 100 L 43.4783 100 L 86.9565 73.9131 L 86.9565 26.0869 L 76.8116 33.3333 L 76.8116 68.1159 L 43.4783 86.9565 L 10.1449 68.1159 L 10.1449 30.4348 L 42.029 13.0435 L 42.029 0 Z" fill="#1b1f2a" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6.507235943899715"/>
+                    </g>
+                    <g transform="translate(46.3768 0)">
+                        <path d="M 0 0 L 0 13.0435 L 28.9855 28.9855 L 39.1304 23.1884 Z" fill="#29b473" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6.507235943899715"/>
+                    </g>
+                </g>
+            </g>
+            <g class="l0rzlnx25sa.lay" v:layer_name="Collect Layer">
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

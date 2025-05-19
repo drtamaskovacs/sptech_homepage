@@ -3,14 +3,14 @@ import type { Links, Page, Site, Socials } from "@types";
 // Global
 export const SITE: Site = {
   TITLE: "SP Technologies",
-  DESCRIPTION: "Welcome to SP Technologies - where dreams come true.",
-  AUTHOR: "Andras Hejj",
+  DESCRIPTION: "We specialize in building and operating advanced data platforms, system integration, data science, and computer vision solutions.",
+  AUTHOR: "SP Technologies",
 };
 
 // Projects Page
 export const PROJECTS: Page = {
   TITLE: "Projects",
-  DESCRIPTION: "Recent projects I have worked on.",
+  DESCRIPTION: "Recent projects we have worked on.",
 };
 
 // Search Page
@@ -28,6 +28,10 @@ export const LINKS: Links = [
   {
     TEXT: "Projects",
     HREF: "/projects",
+  },
+  {
+    TEXT: "Blog",
+    HREF: "/blog",
   },
 ];
 

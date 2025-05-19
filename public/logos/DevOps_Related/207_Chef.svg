@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="99.6109" height="100.0001" viewBox="0 0 99.6109000956618 100.00005990083969">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g transform="translate(0 0)">
+        <g>
+            <g transform="translate(19.0234 19.0189)">
+                <path d="M 30.9781 53.4968 C 18.5625 53.4968 8.4594 43.3953 8.4594 30.9969 C 8.4594 18.5984 18.5641 8.4594 30.9781 8.4594 C 41.2281 8.4594 49.8937 15.3437 52.6093 24.7297 L 61.3218 24.7297 C 58.4218 10.6328 45.9203 0 30.9781 0 C 13.8969 0 0 13.8969 0 30.9797 C 0 48.0625 13.8969 61.9578 30.9781 61.9578 C 45.9203 61.9578 58.4218 51.3281 61.3218 37.2297 L 52.5953 37.2297 C 49.8797 46.614 41.214 53.4797 30.964 53.4797" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(34.8219 58.8376)">
+                <path d="M 0 6.3406 C 4.0209 10.3759 9.4845 12.6422 15.1811 12.6375 L 15.1811 3.6625 C 11.865 3.6656 8.6842 2.3477 6.3422 0 Z" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(28.525 28.522)">
+                <path d="M 0.00001 21.4781 C 0 24.5515 0.6562 27.475 1.8219 30.1219 L 10.0344 26.5094 C 9.3352 24.9242 8.975 23.2105 8.9766 21.4781 C 8.9766 14.5745 14.573 8.9781 21.4766 8.9781 L 21.4766 0 C 9.6328 -0.0016 0 9.6344 0 21.4781" fill="#f38b00" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(54.5296 29.9688)">
+                <path d="M 3.2578 0.00001 L 0 8.3703 C 2.6484 9.4025 4.8673 11.3045 6.2922 13.7641 L 16.0172 13.7641 C 14.0984 7.475 9.3516 2.3937 3.2578 0" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(54.5328 56.2454)">
+                <path d="M 0.0016 5.3953 L 3.2562 13.7656 C 9.3873 11.3645 14.0866 6.2952 16.0172 0 L 6.2922 0 C 4.8766 2.4453 2.6594 4.375 0 5.3953" fill="#f38b00" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(0 50.0126)">
+                <path d="M 10.2656 12 L 9.8625 10.5812 L 9.8391 10.4937 L 9.5141 9.1656 L 9.4547 8.8922 L 9.2156 7.7391 L 9.125 7.2234 L 8.9687 6.2969 L 8.8594 5.5156 C 8.6114 3.6875 8.4861 1.8448 8.4844 0 L 0 0 C -0.0002 2.0122 0.1216 4.0227 0.3641 6.0203 L 0.3797 6.1484 L 0.6031 7.7578 L 0.6766 8.2016 L 0.9109 9.5141 L 1.0672 10.2062 L 1.2922 11.2453 L 1.5156 12.1516 L 1.7219 12.9594 L 2.15 14.4672 L 2.1531 14.4672 C 2.7391 16.4047 3.4344 18.2953 4.2391 20.1234 L 12.0125 16.7047 C 11.3437 15.1891 10.7656 13.6187 10.2937 12.0109 Z" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(3.3984 0.0001)">
+                <path d="M 46.6031 91.5189 C 35.1562 91.5189 24.7797 86.8578 17.2625 79.3392 L 11.2547 85.3469 C 20.3031 94.3969 32.7984 100 46.6031 100 C 72.1 100 93.1343 80.9142 96.2124 56.25 L 87.6531 56.25 C 84.6265 76.1875 67.3718 91.5189 46.6031 91.5189 M 46.6031 8.4797 C 55.5531 8.4694 64.264 11.3683 71.4234 16.7393 L 76.5046 9.9268 C 67.8756 3.4668 57.3823 -0.0167 46.6031 0.0001 C 25.3875 0.0001 7.2594 13.2157 0 31.8641 L 7.9125 34.9424 C 13.9516 19.469 29.0015 8.4797 46.6031 8.4797" fill="#f38b00" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(85.2125 23.5252)">
+                <path d="M 5.8391 20.225 L 14.3984 20.225 C 13.5042 13.0398 11.0502 6.137 7.2078 0 L 0 4.4969 C 3.0033 9.2842 4.9906 14.6376 5.8391 20.225" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(61.6093 12.2813)">
+                <path d="M 19.7984 31.4687 L 28.3875 31.4687 C 26.1469 17.0672 16.2828 5.1594 3.0672 0 L 0 7.8875 C 10.05 11.7937 17.6531 20.6656 19.7969 31.4687" fill="#f38b00" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(12.2797 9.5205)">
+                <path d="M 37.7219 8.4578 L 37.7219 0 C 20.5764 0 5.8906 10.7141 0 25.8 L 7.8811 28.8672 C 12.5422 16.9328 24.1609 8.4578 37.7219 8.4578" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(9.525 50.0001)">
+                <path d="M 8.4578 0.00001 L 0 0 C 0 17.0094 10.5469 31.5937 25.4467 37.5734 L 28.5719 29.7234 C 16.8016 24.9906 8.4578 13.4531 8.4578 0" fill="#f38b00" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+            <g transform="translate(50.0015 56.2298)">
+                <path d="M 0.00001 25.7703 L 0 34.2297 C 20.1953 34.2297 36.9812 19.3625 39.9953 0 L 31.4047 0 C 28.4922 14.6766 15.5187 25.7703 0 25.7703" fill="#435363" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"/>
+            </g>
+        </g>
+    </g>
+</svg>

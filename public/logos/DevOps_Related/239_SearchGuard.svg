@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100.0001" viewBox="0 0 100 100.000058454684">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <g transform="translate(0 0)">
+        <g>
+            <g transform="translate(12.0588 0)">
+                <g>
+                    <g transform="translate(10.7884 28.9037)">
+                        <path d="M 32.3763 64.4114 C 40.8381 64.4114 47.8053 66.6946 52.5365 71.0843 L 65.0941 71.0843 C 64.0347 70.2255 62.9872 69.0839 62.0811 67.6834 C 60.6806 65.5177 59.6096 62.7401 59.3388 59.4098 L 59.3388 51.089 C 57.0556 47.6289 53.4664 44.8866 48.2762 42.7801 L 44.5572 41.2502 C 41.6033 40.0145 38.1785 38.4845 38.1785 35.919 C 38.1785 33.6358 40.5558 32.7765 43.4155 32.7765 C 49.9944 32.7765 55.4316 35.6363 59.3388 41.3562 L 59.3388 23.8204 C 59.3388 22.3258 59.2094 20.9134 59.0097 19.5482 C 57.1736 6.7909 47.0052 0 32.3644 0 C 16.2647 0 5.7785 8.5797 5.7785 24.4915 L 5.7785 59.4213 C 5.4608 65.1413 2.7775 68.8603 0 71.0963 L 12.6398 71.0963 C 17.2886 66.718 24.0794 64.4233 32.3644 64.4233 L 32.3763 64.4114 Z" stroke="none" stroke-linejoin="miter" stroke-linecap="butt" fill="#1a4a63" fill-rule="nonzero"/>
+                    </g>
+                    <g transform="translate(0 0)">
+                        <path d="M 62.8301 4.6363 C 60.7351 3.1416 50.6139 -0.4479 39.6922 0.0463 C 9.0695 1.435 -3.8646 27.1855 0.996 45.1919 C 2.6084 51.1588 5.3035 56.2311 8.8341 60.2444 C 8.6576 59.5383 8.4811 58.8439 8.3751 58.1613 C 6.092 43.7914 11.7529 32.7288 21.9447 25.3966 C 33.7845 16.8877 50.8255 19.6534 53.98 20.7361 L 62.8181 4.6245 L 62.8301 4.6363 Z" stroke="none" stroke-linejoin="miter" stroke-linecap="butt" fill="#1a4a63" fill-rule="nonzero"/>
+                    </g>
+                </g>
+            </g>
+            <g class="l0rzlnx25sa.lay" v:layer_name="Collect Layer">
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

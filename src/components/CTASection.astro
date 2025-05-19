@@ -1,0 +1,91 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+  buttonText?: string;
+  emailAddress?: string;
+}
+const { 
+  title = "Have a Project in mind?", 
+  subtitle = "Ready to transform your data strategy? Let's talk.",
+  buttonText = "Let's connect",
+  emailAddress = "info@sptech.ch"
+} = Astro.props;
+---
+
+<section class="bg-slate-900 py-28 relative border-y-slate-500 border-y mix-blend-lighten">
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center justify-center gap-6 text-center">
+      <!-- Heading -->
+      <h2 class="font-square text-5xl font-bold text-blue-400 mb-2">
+        {title}
+      </h2>
+      
+      <!-- Subtitle -->
+      <p class="text-gray-300 max-w-lg mb-8">
+        {subtitle}
+      </p>
+      
+      <!-- Copy Email Button with Icon -->
+      <button 
+        id="copy-email-btn"
+        class="inline-flex items-center justify-center px-12 py-4 text-2xl font-square text-white rounded border border-blue-600 hover:bg-[#1d293d] transition-colors duration-300 gap-3 relative"
+      >
+        <!-- Mail Icon (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400">
+          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+        </svg>
+        <span id="button-text">{buttonText}</span>
+        
+        <!-- Tooltip that appears when email is copied -->
+        <div id="copy-tooltip" class="bg-slate-800 text-white py-2 px-4 rounded text-sm opacity-0 transition-opacity duration-300 absolute -bottom-12 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+          Email copied: {emailAddress}
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script is:inline define:vars={{ emailAddress }}>
+  // Use window.onload to ensure everything is loaded
+  window.onload = function() {
+    const copyButton = document.getElementById('copy-email-btn');
+    const buttonText = document.getElementById('button-text');
+    const tooltip = document.getElementById('copy-tooltip');
+    const originalButtonText = buttonText.textContent;
+    
+    if (copyButton) {
+      copyButton.addEventListener('click', function() {
+        // Create a temporary input element
+        const tempInput = document.createElement('input');
+        tempInput.value = emailAddress;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        
+        try {
+          // Try to copy using document.execCommand (wider browser support)
+          document.execCommand('copy');
+          buttonText.textContent = 'Email copied!';
+          tooltip.classList.remove('opacity-0');
+          tooltip.classList.add('opacity-100');
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+          buttonText.textContent = 'Copy failed';
+        }
+        
+        // Remove the temporary input
+        document.body.removeChild(tempInput);
+        
+        // Reset after 2 seconds
+        setTimeout(function() {
+          buttonText.textContent = originalButtonText;
+          tooltip.classList.remove('opacity-100');
+          tooltip.classList.add('opacity-0');
+        }, 2000);
+      });
+    } else {
+      console.error('Copy button not found!');
+    }
+  };
+</script>

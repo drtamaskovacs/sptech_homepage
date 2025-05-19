@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100.00001866410827 100">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <defs>
+        <linearGradient id="L-010710010702a59a21002a59a2.grad" x1="-0.00%" x2="100.00%" y1="107.40%" y2="107.40%">
+            <stop offset="0%" stop-color="#2a59a2"/>
+            <stop offset="100%" stop-color="#2a59a2"/>
+        </linearGradient>
+        <linearGradient id="L-7220179220091d3f2266fb2de525598ce674b8fc8.grad" x1="-7.21%" x2="179.76%" y1="220.44%" y2="220.44%">
+            <stop offset="0%" stop-color="#91d3f2"/>
+            <stop offset="26.6%" stop-color="#6fb2de"/>
+            <stop offset="52.1%" stop-color="#5598ce"/>
+            <stop offset="67.30000000000001%" stop-color="#4b8fc8"/>
+        </linearGradient>
+        <linearGradient id="L-0501605002c9ec7402c63a5100395da1.grad" x1="-0.00%" x2="160.91%" y1="50.95%" y2="50.95%">
+            <stop offset="0%" stop-color="#2c9ec7"/>
+            <stop offset="40.400000000000006%" stop-color="#2c63a5"/>
+            <stop offset="100%" stop-color="#395da1"/>
+        </linearGradient>
+        <linearGradient id="L-41551944151904faac402f75b1100356eac.grad" x1="-415.68%" x2="441.18%" y1="519.55%" y2="519.55%">
+            <stop offset="0%" stop-color="#4faac4"/>
+            <stop offset="0.2%" stop-color="#2f75b1"/>
+            <stop offset="100%" stop-color="#356eac"/>
+        </linearGradient>
+        <linearGradient id="L038316238304faac402f81b61003b5ea9.grad" x1="0.00%" x2="162.18%" y1="383.69%" y2="383.69%">
+            <stop offset="0%" stop-color="#4faac4"/>
+            <stop offset="0.2%" stop-color="#2f81b6"/>
+            <stop offset="100%" stop-color="#3b5ea9"/>
+        </linearGradient>
+        <linearGradient id="L-7912514612504faac401e3773100203370.grad" x1="-79.61%" x2="146.50%" y1="125.94%" y2="125.94%">
+            <stop offset="0%" stop-color="#4faac4"/>
+            <stop offset="0.2%" stop-color="#1e3773"/>
+            <stop offset="100%" stop-color="#203370"/>
+        </linearGradient>
+        <linearGradient id="L502015035204faac402c5a9a100374580.grad" x1="50.00%" x2="50.00%" y1="201.87%" y2="352.23%">
+            <stop offset="0%" stop-color="#4faac4"/>
+            <stop offset="0.2%" stop-color="#2c5a9a"/>
+            <stop offset="100%" stop-color="#374580"/>
+        </linearGradient>
+        <linearGradient id="L-2293129931138b1da100326fb5.grad" x1="-22.26%" x2="129.61%" y1="93.14%" y2="93.14%">
+            <stop offset="11.200000000000001%" stop-color="#38b1da"/>
+            <stop offset="100%" stop-color="#326fb5"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <g transform="translate(0 9.1527)">
+                <g>
+                    <g transform="translate(0 0.0009)">
+                        <path d="M 99.4666 34.8284 L 97.6811 34.8284 C 94.4331 34.788 88.2038 35.1355 82.5563 40.0155 C 69.0716 51.6903 65.9933 68.8753 42.9183 78.1506 C 23.6972 85.8745 0 78.5626 0 78.5626 C 0 78.5626 21.1441 77.0922 23.9477 60.9575 C 26.1372 48.3373 14.6561 39.3772 7.4494 27.9931 C 0.1213 16.3991 -1.7614 6.7683 1.7694 2.6074 C 11.7798 -9.2129 39.3472 22.7414 53.0339 27.0478 C 66.4297 31.2572 75.4705 21.4811 86.5638 22.9192 C 90.1025 23.3717 91.8316 24.8988 92.9788 26.8458 C 93.3666 27.5003 94.32 29.7302 95.1683 30.5544 C 96.0005 31.3624 97.1073 31.9602 98.1416 32.5661 C 99.4584 33.3417 100.7594 34.8284 99.4666 34.8284 Z" fill="url(#L-010710010702a59a21002a59a2.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(0.0437 0)">
+                        <path d="M 36.0717 16.3434 C 32.7591 13.8225 29.3414 11.1806 25.9805 8.7728 C 25.221 8.2316 24.4614 7.6983 23.7102 7.1813 C 14.7014 1.0166 6.3472 -2.8455 1.7258 2.6083 C -1.805 6.7692 0.0775 16.3998 7.4138 27.9941 C 7.4864 28.1151 7.5672 28.2283 7.6399 28.3495 C 11.4616 34.2637 22.5466 48.12 48.8211 47.5301 C 50.5502 45.6961 53.176 42.23 56.5694 38.4569 C 51.0672 29.5614 42.7777 21.8051 36.0717 16.3434 Z" fill="url(#L-7220179220091d3f2266fb2de525598ce674b8fc8.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(0.0081 46.5606)">
+                        <path d="M 62.5919 11.5859 C 62.6969 7.6431 61.9778 3.7569 60.6123 0 C 57.1623 0.517 53.2761 0.8725 48.8566 0.9695 C 45.6411 4.3872 38.2967 13.517 26.1291 21.7419 C 9.9297 32.6976 0 32.0028 0 32.0028 C 0 32.0028 23.7052 39.3148 42.9183 31.5908 C 49.81 28.8195 54.9244 25.3453 59.0611 21.5156 C 59.7398 20.8694 62.4464 17.492 62.5919 11.5859 Z" fill="url(#L-0501605002c9ec7402c63a5100395da1.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(48.8729 38.4569)">
+                        <path d="M 7.7483 0 C 4.3548 3.765 1.7209 7.2392 0 9.0733 C 4.4275 8.9762 8.3138 8.6208 11.7556 8.1037 C 11.3517 6.9806 10.883 5.8737 10.3659 4.7831 C 9.5903 3.1591 8.7097 1.5594 7.7483 0 Z" fill="url(#L-41551944151904faac402f75b1100356eac.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(36.1154 16.3434)">
+                        <path d="M 40.2036 7.8209 C 33.1097 9.9701 26.0241 13.5655 16.9184 10.7053 C 12.41 9.2914 6.3908 4.8719 0 0 C 6.7059 5.4617 14.9955 13.21 20.5058 22.1136 C 25.5313 16.5469 32.2372 10.3256 40.2036 7.8209 Z" fill="url(#L038316238304faac402f81b61003b5ea9.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(59.0692 36.6471)">
+                        <path d="M 1.5594 9.9136 C 2.9248 13.6705 3.6439 17.5567 3.5388 21.4995 C 3.3853 27.3975 0.6788 30.7748 0 31.4292 C 9.7034 22.453 14.0422 11.5536 23.4952 3.3691 C 25.2566 1.8502 27.0663 0.7675 28.8356 0 L 28.8277 0 C 22.6306 2.6016 15.9086 7.7483 1.5594 9.9136 Z" fill="url(#L-7912514612504faac401e3773100203370.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(56.6211 22.783)">
+                        <path d="M 42.8455 12.0462 C 44.1383 12.0462 42.8375 10.5597 41.5286 9.792 C 40.4944 9.178 39.3875 8.5801 38.5553 7.7803 C 37.6989 6.9562 36.7456 4.7181 36.3658 4.0719 C 35.2105 2.1166 33.4895 0.5976 29.9508 0.1451 C 26.3956 -0.3153 23.0508 0.3795 19.7059 1.3894 C 11.7395 3.894 5.0255 10.1153 0 15.682 C 0.9616 17.2414 1.8502 18.8329 2.6178 20.457 C 3.1348 21.5558 3.6034 22.6626 4.0075 23.7776 C 18.3647 21.6123 25.0788 16.4658 31.2758 13.8642 L 31.2838 13.8642 C 35.1863 12.1675 38.8381 12.0139 41.0681 12.0462 Z" fill="url(#L502015035204faac402c5a9a100374580.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(0.0081 28.3495)">
+                        <path d="M 26.1291 39.9531 C 38.2967 31.7281 45.6411 22.5983 48.8566 19.1806 C 22.5822 19.7705 11.4972 5.9142 7.6755 0 C 14.8905 11.2223 26.113 20.1259 23.9477 32.6087 C 21.1441 48.7436 0 50.214 0 50.214 C 0 50.214 9.9297 50.9089 26.1291 39.9531 Z" fill="url(#L-2293129931138b1da100326fb5.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                    <g transform="translate(83.7358 26.8548)">
+                        <path d="M 0 2.0845 C 0 0.9297 0.9369 0 2.1006 0 C 3.2644 0 4.2013 0.9297 4.2013 2.0845 C 4.2013 3.2394 3.2644 4.1691 2.1006 4.1691 C 0.9369 4.1691 0 3.2394 0 2.0845 Z" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.05170884737621153"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>

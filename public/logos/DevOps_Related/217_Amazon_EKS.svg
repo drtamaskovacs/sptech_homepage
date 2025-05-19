@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:v="http://vecta.io" width="100" height="100" viewBox="0 0 100 100.00004393375025">
+    <style>
+        <![CDATA[svg{stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:#fff;fill-rule:evenodd;font-family:Roboto;font-size:14px;text-anchor:middle;}svg text{paint-order:stroke;white-space:pre;}svg .Text\.cls{stroke:none;}]]>
+    </style>
+    <defs>
+        <linearGradient id="L85975-304f66b9100484fab.grad" spreadMethod="pad" y2="-3.70%" x2="5.90%" y1="97.43%" x1="85.47%">
+            <stop offset="0%" stop-color="#4f66b9"/>
+            <stop offset="100%" stop-color="#484fab"/>
+        </linearGradient>
+        <linearGradient id="L1109414-304f66b9100484fab.grad" spreadMethod="pad" y2="-3.45%" x2="14.49%" y1="94.28%" x1="110.58%">
+            <stop offset="0%" stop-color="#4f66b9"/>
+            <stop offset="100%" stop-color="#484fab"/>
+        </linearGradient>
+        <linearGradient id="L6394111704c68bb1005180c9.grad" spreadMethod="pad" y2="17.57%" x2="11.69%" y1="94.54%" x1="63.02%">
+            <stop offset="0%" stop-color="#4c68bb"/>
+            <stop offset="100%" stop-color="#5180c9"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <g transform="translate(5.5673 0)">
+                <g>
+                    <g transform="translate(34.9505 34.3265)">
+                        <path d="M 0.00001 0.0002 L 4.1059 0.0002 L 4.1059 12.1102 L 15.9288 0.0002 L 21.3491 0.0002 L 8.3762 13.3427 L 22.1692 28.7386 L 16.9151 28.7386 L 4.1061 14.3696 L 4.1061 28.7386 L 0.0003 28.7386 L 0.0003 0" fill="url(#L85975-304f66b9100484fab.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.07736969482299431"/>
+                    </g>
+                    <g transform="translate(47.254 0.0008)">
+                        <path d="M 0.5573 22.9206 L 20.778 34.5949 C 21.1227 34.7944 21.335 35.1624 21.3352 35.5607 L 21.3352 58.9097 C 21.3352 59.3077 21.5492 59.6761 21.8938 59.8754 L 39.9384 70.294 C 40.6821 70.7239 41.6115 70.1853 41.6115 69.3284 L 41.6115 23.8533 C 41.6115 23.4551 41.399 23.0873 41.0554 22.8876 L 1.6745 0.1508 C 0.9308 -0.2783 0 0.2597 0 1.1179 L 0 21.955 C 0 22.3539 0.213 22.7209 0.5584 22.9206" fill="url(#L1109414-304f66b9100484fab.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.07736969482299431"/>
+                    </g>
+                    <g transform="translate(0 0)">
+                        <path d="M 65.2106 64.7627 L 44.9899 76.437 C 44.6454 76.6367 44.2193 76.6367 43.8746 76.437 L 20.8324 63.1337 C 20.4872 62.9338 20.2744 62.5654 20.2738 62.1666 L 20.2738 35.5593 C 20.2747 35.1607 20.4875 34.7929 20.8325 34.5934 L 41.0532 22.9199 C 41.3984 22.7211 41.6112 22.3531 41.6113 21.9547 L 41.6113 1.1175 C 41.6113 0.2591 40.6812 -0.2776 39.9374 0.1503 L 0.5561 22.8885 C 0.2112 23.0881 0 23.4561 0 23.8541 L 0 73.8744 C 0 74.2734 0.2125 74.6404 0.5561 74.8415 L 43.8746 99.8501 C 44.2191 100.05 44.6452 100.05 44.9899 99.8501 L 84.3711 77.114 C 85.1147 76.6843 85.1147 75.6111 84.3711 75.1817 L 66.3263 64.7627 C 65.9802 64.563 65.5552 64.563 65.2106 64.7627" fill="url(#L6394111704c68bb1005180c9.grad)" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.07736969482299431"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <rect fill="none" fill-opacity="0" height="100" stroke="none" stroke-opacity="0" width="100" x="0" y="0"/>
+            </g>
+        </g>
+    </g>
+</svg>
