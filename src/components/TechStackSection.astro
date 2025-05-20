@@ -310,40 +310,40 @@ const totalTools = techFolders.reduce((total, folder) =>
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Handle folder toggling
-    const folderToggles = document.querySelectorAll('.folder-toggle');
-    
-    folderToggles.forEach((toggle) => {
-      toggle.addEventListener('click', () => {
-        const folder = toggle.closest('.tech-folder');
-        const content = folder?.querySelector('.folder-content');
-        const inner = folder?.querySelector('.folder-inner');
-        const chevron = folder?.querySelector('.folder-chevron');
+document.addEventListener('DOMContentLoaded', () => {
+  // Handle folder toggling
+  const folderToggles = document.querySelectorAll('.folder-toggle');
+  
+  folderToggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const folder = toggle.closest('.tech-folder');
+      const content = folder?.querySelector('.folder-content') as HTMLElement;
+      const inner = folder?.querySelector('.folder-inner') as HTMLElement;
+      const chevron = folder?.querySelector('.folder-chevron') as HTMLElement;
+      
+      if (!content || !inner || !chevron) return;
+      
+      const isExpanded = content.style.maxHeight !== '0px';
+      
+      if (isExpanded) {
+        // Collapse
+        inner.style.opacity = '0';
+        content.style.maxHeight = '0px';
+        chevron.style.transform = 'rotate(0deg)';
+      } else {
+        // Expand
+        const scrollHeight = inner.scrollHeight;
+        content.style.maxHeight = `${scrollHeight + 32}px`; // Add padding
+        chevron.style.transform = 'rotate(90deg)';
         
-        if (!content || !inner || !chevron) return;
-        
-        const isExpanded = content.style.maxHeight !== '0px';
-        
-        if (isExpanded) {
-          // Collapse
-          inner.style.opacity = '0';
-          content.style.maxHeight = '0px';
-          chevron.style.transform = 'rotate(0deg)';
-        } else {
-          // Expand
-          const scrollHeight = inner.scrollHeight;
-          content.style.maxHeight = `${scrollHeight + 32}px`; // Add padding
-          chevron.style.transform = 'rotate(90deg)';
-          
-          // Fade in content after expansion starts
-          setTimeout(() => {
-            inner.style.opacity = '1';
-          }, 100);
-        }
-      });
+        // Fade in content after expansion starts
+        setTimeout(() => {
+          inner.style.opacity = '1';
+        }, 100);
+      }
     });
   });
+});
 </script>
 
 <style>
