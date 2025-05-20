@@ -1,6 +1,6 @@
 # TBD
 
-TBD is an awesome tech consulting company - this is their landing page
+TBD is an awesome tech consulting company - this is their landing page.
 
 ## 💻 Commands
 
