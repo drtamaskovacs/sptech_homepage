@@ -1,10 +1,8 @@
 ---
-// ProjectsSection.astro
 
 import { getCollection } from 'astro:content';
 import { formatDate } from '@lib/utils';
 
-// Update interface to match your actual content schema
 interface ProjectData {
   title: string;
   summary: string;
@@ -25,7 +23,6 @@ interface CollectionEntry {
   data: ProjectData;
 }
 
-// Fetch projects from content collection
 const allProjects = await getCollection('projects');
 const featuredProjects = allProjects
   .filter(project => !project.data.draft)
@@ -34,7 +31,7 @@ const featuredProjects = allProjects
     const dateB = new Date(b.data.date).getTime();
     return dateB - dateA;
   })
-  .slice(0, 3); // Get the 3 most recent projects
+  .slice(0, 3);
 
 interface Props {
   title?: string;
@@ -109,7 +106,6 @@ const {
       ))}
     </div>
     
-    {/* View all projects link */}
     <div class="flex justify-end mt-8 max-w-4xl mx-auto">
       <a href="/projects" class="text-white flex items-center group">
         All Projects 
