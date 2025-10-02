@@ -9,6 +9,7 @@ tags:
   - System Integration
   - PostgreSQL
   - Apache Kafka
+  - Annamari
 duration: "6 months"
 ---
 
