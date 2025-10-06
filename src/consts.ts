@@ -3,7 +3,7 @@ import type { Links, Page, Site, Socials } from "@types";
 // Global
 export const SITE: Site = {
   TITLE: "SP Technologies",
-  DESCRIPTION: "We specialize in building and operating advanced data platforms, system integration, data science, and computer vision solutions.",
+  DESCRIPTION: "We specialize in building and operating modern data platforms, delivering analytics and AI solutions, ensuring data security, and enabling scalable DevOps environments.",
   AUTHOR: "SP Technologies",
 };
 
