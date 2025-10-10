@@ -15,8 +15,6 @@ duration: "6 months"
 
 SP Technologies successfully designed and implemented a Real-time Health Data Integration System for a network of regional hospitals in Switzerland. This 6-month project focused on streamlining data flow between different hospital departments and improving data accessibility for healthcare providers.
 
-![Health Data Integration System](/expertise/analytics.png)
-
 Key achievements:
 
 1. Data Platform: We built a robust, scalable data infrastructure using PostgreSQL and Apache Kafka, capable of handling real-time data streams from multiple sources including Electronic Health Records (EHR) and laboratory systems.
