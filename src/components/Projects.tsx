@@ -5,12 +5,12 @@ import { cn } from "@lib/utils";
 
 type Props = {
   tags: string[];
-  data: CollectionEntry<"projects">[];
+  data: (CollectionEntry<"projects"> | CollectionEntry<"blog">)[];
 };
 
 export default function Projects({ data, tags }: Props) {
   const [filter, setFilter] = createSignal(new Set<string>());
-  const [projects, setProjects] = createSignal<CollectionEntry<"projects">[]>(
+  const [projects, setProjects] = createSignal<(CollectionEntry<"projects"> | CollectionEntry<"blog">)[]>(
     [],
   );
 
