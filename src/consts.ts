@@ -44,3 +44,9 @@ export const SOCIALS: Socials = [
     HREF: "mailto:info@sptech.ch",
   },
 ];
+
+//
+export const BLOG = {
+  TITLE: "Blog",
+  DESCRIPTION: "SPTech Blog"
+};
