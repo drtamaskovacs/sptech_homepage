@@ -15,23 +15,20 @@ tags:
 duration: "3 months"
 ---
 
-## Sector
-Social Security / Public Administration
+## Project Information
+> | 🏛️ Sector | Social Security / Public Administration |  
+> | 👤 Client | Swiss IT Service Provider |
 
----
 
 ## Challenge
 
-Cantonal social security institutions relied on several independent applications whose data resided in separate Oracle and DB2 databases.  
-The institutions had no direct access to their own data and had to manually export information from each application whenever they wanted to perform any kind of analysis — a slow, error-prone process that often took several days before meaningful insights could be produced.
+Cantonal social security institutions relied on several independent applications whose data resided in separate Oracle and DB2 databases. The institutions had no direct access to their own data and had to manually export information from each application whenever they wanted to perform any kind of analysis — a slow, error-prone process that often took several days before meaningful insights could be produced.
 
 Additionally, the source data models were poorly documented, and each application followed a different and inconsistent database structure, making integration and mapping between systems particularly difficult.
 
 Due to the Information Security and Data Protection (ISDS) framework and internal security regulations, there were strict constraints on the services and tools that could be used within the data pipeline.  
-The solution therefore had to remain as lightweight and database-close as possible, using only essential components with minimal external dependencies.  
-Cloud-based services were excluded because of data sensitivity and compliance restrictions.
+The solution therefore had to remain as lightweight and database-close as possible, using only essential components with minimal external dependencies. Cloud-based services were excluded because of data sensitivity and compliance restrictions.
 
----
 
 ## Our Solution
 
@@ -43,7 +40,6 @@ All replication, transformation, and semantic modeling steps were implemented in
 
 As a result, SP Technologies established a fully automated end-to-end data pipeline requiring zero manual intervention and delivered a standardized, governance-compliant reporting layer accessible to all participating institutions.
 
----
 
 ## Result
 
