@@ -18,13 +18,13 @@ duration: "3 months"
 <div class="my-6 flex flex-wrap items-center gap-2">
   <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-700 ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:ring-slate-700">
     <span aria-hidden="true">🏛️</span>
-    <span class="text-slate-900 dark:text-slate-100">Sector:</span>
+    <span class="text-slate-900 dark:text-slate-100">Sector |</span>
     <span class="text-slate-700 dark:text-slate-300">Social Security / Public Administration</span>
   </span>
 
   <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-700 ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:ring-slate-700">
     <span aria-hidden="true">👤</span>
-    <span class="text-slate-900 dark:text-slate-100">Client:</span>
+    <span class="text-slate-900 dark:text-slate-100">Client |</span>
     <span class="text-slate-700 dark:text-slate-300">Swiss IT Service Provider</span>
   </span>
 </div>
@@ -38,8 +38,7 @@ Cantonal social security institutions relied on several independent applications
 
 Additionally, the source data models were poorly documented, and each application followed a different and inconsistent database structure, making integration and mapping between systems particularly difficult.
 
-Due to the Information Security and Data Protection (ISDS) framework and internal security regulations, there were strict constraints on the services and tools that could be used within the data pipeline.  
-The solution therefore had to remain as lightweight and database-close as possible, using only essential components with minimal external dependencies. Cloud-based services were excluded because of data sensitivity and compliance restrictions.
+Due to the Information Security and Data Protection (ISDS) framework and internal security regulations, there were strict constraints on the services and tools that could be used within the data pipeline. The solution therefore had to remain as lightweight and database-close as possible, using only essential components with minimal external dependencies. Cloud-based services were excluded because of data sensitivity and compliance restrictions.
 
 ## Our Solution
 
@@ -49,8 +48,7 @@ Using Foreign Data Wrappers (FDW) for Oracle and DB2 — extended and optimized 
 
 All replication, transformation, and semantic modeling steps were implemented in dbt, chosen for its minimal footprint and command-line operation without any UI or cloud dependency.
 
-As a result, SP Technologies established a fully automated end-to-end data pipeline requiring zero manual intervention and delivered a standardized, governance-compliant reporting layer accessible to all participating institutions.
-
+SP Technologies established a fully automated end-to-end data pipeline requiring zero manual intervention and delivered a standardized, governance-compliant reporting layer accessible to all participating institutions.
 
 ## Result
 
@@ -61,6 +59,8 @@ Reporting efficiency improved by over 99 %, eliminating all manual exports and s
 Data delivery became consistent, reliable, and governance-compliant, providing a trusted foundation for cross-system analysis and decision-making.
 
 The unified platform also enabled greater transparency and data ownership for the institutions — empowering them to independently analyze their operational data without relying on third-party exports or IT intervention.
+
+---
 
 This project set a new internal standard for secure and efficient data integration within the Swiss social security sector.
 
