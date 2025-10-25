@@ -16,9 +16,22 @@ duration: "3 months"
 ---
 
 ## Project Information
-| 🏛️ Sector | Social Security / Public Administration |  
-| 👤 Client | Swiss IT Service Provider |
+<div class="my-6 p-4 bg-slate-50 border border-slate-200 rounded-xl shadow-sm text-sm">
+  <table class="w-full">
+    <tbody>
+      <tr>
+        <td class="pr-4 whitespace-nowrap">🏛️ <span class="font-medium">Sector</span></td>
+        <td>Social Security / Public Administration</td>
+      </tr>
+      <tr>
+        <td class="pr-4 whitespace-nowrap">👤 <span class="font-medium">Client</span></td>
+        <td>Swiss IT Service Provider</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
+<div class="text-justify">
 
 ## Challenge
 
@@ -28,7 +41,6 @@ Additionally, the source data models were poorly documented, and each applicatio
 
 Due to the Information Security and Data Protection (ISDS) framework and internal security regulations, there were strict constraints on the services and tools that could be used within the data pipeline.  
 The solution therefore had to remain as lightweight and database-close as possible, using only essential components with minimal external dependencies. Cloud-based services were excluded because of data sensitivity and compliance restrictions.
-
 
 ## Our Solution
 
@@ -52,3 +64,5 @@ Data delivery became consistent, reliable, and governance-compliant, providing a
 The unified platform also enabled greater transparency and data ownership for the institutions — empowering them to independently analyze their operational data without relying on third-party exports or IT intervention.
 
 This project set a new internal standard for secure and efficient data integration within the Swiss social security sector.
+
+</div>
