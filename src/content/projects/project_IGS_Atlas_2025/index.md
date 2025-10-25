@@ -16,8 +16,8 @@ duration: "3 months"
 ---
 
 ## Project Information
-> | 🏛️ Sector | Social Security / Public Administration |  
-> | 👤 Client | Swiss IT Service Provider |
+| 🏛️ Sector | Social Security / Public Administration |  
+| 👤 Client | Swiss IT Service Provider |
 
 
 ## Challenge
