@@ -15,21 +15,20 @@ tags:
 duration: "3 months"
 ---
 
-## Project Information
-<div class="my-6 p-4 bg-slate-50 border border-slate-200 rounded-xl shadow-sm text-sm">
-  <table class="w-full">
-    <tbody>
-      <tr>
-        <td class="pr-4 whitespace-nowrap">🏛️ <span class="font-medium">Sector</span></td>
-        <td>Social Security / Public Administration</td>
-      </tr>
-      <tr>
-        <td class="pr-4 whitespace-nowrap">👤 <span class="font-medium">Client</span></td>
-        <td>Swiss IT Service Provider</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="my-6 flex flex-wrap items-center gap-2">
+  <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-700 ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:ring-slate-700">
+    <span aria-hidden="true">🏛️</span>
+    <span class="text-slate-900 dark:text-slate-100">Sector:</span>
+    <span class="text-slate-700 dark:text-slate-300">Social Security / Public Administration</span>
+  </span>
+
+  <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-700 ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:ring-slate-700">
+    <span aria-hidden="true">👤</span>
+    <span class="text-slate-900 dark:text-slate-100">Client:</span>
+    <span class="text-slate-700 dark:text-slate-300">Swiss IT Service Provider</span>
+  </span>
 </div>
+
 
 <div class="text-justify">
 
