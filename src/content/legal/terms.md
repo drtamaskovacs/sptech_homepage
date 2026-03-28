@@ -52,7 +52,6 @@ We reserve the right, at our sole discretion, to modify or replace these Terms a
 
 If you have any questions about these Terms, please contact us:
 
-SP Technologies
-[Your Address]
-[Your Contact Email]
-[Your Phone Number]
+SP Technologies GmbH
+Gartenstr. 7, 6300 Zug
+info@sptech.ch
