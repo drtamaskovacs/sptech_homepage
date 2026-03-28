@@ -50,4 +50,5 @@ If you have any questions about this Privacy Policy, the practices of this site,
 
 SP Technologies GmbH
 Gartenstr. 7, 6300 Zug
+
 info@sptech.ch

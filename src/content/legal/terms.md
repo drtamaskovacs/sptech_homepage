@@ -54,4 +54,5 @@ If you have any questions about these Terms, please contact us:
 
 SP Technologies GmbH
 Gartenstr. 7, 6300 Zug
+
 info@sptech.ch
