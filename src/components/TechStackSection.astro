@@ -289,7 +289,7 @@ const totalTools = techFolders.reduce((total, folder) =>
                           {category.items.map((item, itemIndex) => (
                             <div class="flex items-center gap-3 p-2 rounded-md hover:bg-slate-700/30 transition-all duration-150 transform hover:scale-105 hover:translate-x-1"
                                  style={`animation-delay: ${(categoryIndex * 100) + (itemIndex * 25)}ms`}>
-                              <img src={item.icon} alt={item.name} class="w-5 h-5 flex-shrink-0" />
+                              <img src={item.icon} alt={item.name} class="w-5 h-5 shrink-0" />
                               <span class="text-slate-300 text-sm">{item.name}</span>
                             </div>
                           ))}

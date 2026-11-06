@@ -1,8 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Class-based dark mode (public/js/theme.js toggles `.dark` on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-blue-50: #ebf8ff;
   --color-blue-100: #d6f1ff;
@@ -15,6 +16,56 @@
   --color-blue-800: #005885;
   --color-blue-900: #004466;
   --color-blue-950: #00293d;
+
+  --font-sans: "Atkinson", ui-sans-serif, system-ui, sans-serif;
+  --font-square: "Square", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-twinkle: twinkle 2s ease-in-out forwards;
+  --animate-meteor: meteor 3s ease-in-out forwards;
+
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: rotate(180deg);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes meteor {
+    0% {
+      opacity: 0;
+      transform: translateY(200%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* v3 container had `padding: 2rem`; replicate in v4 */
+@utility container {
+  padding-inline: 2rem;
+}
+
+/* v3 theme.extend.backgroundImage.custom-blue-gradient */
+@utility bg-custom-blue-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    #0f172b 0%,
+    #1d293d 50%,
+    #0f172b 100%
+  );
 }
 
 @layer base {
@@ -180,9 +231,9 @@ article img {
 }
 
 #meteors .meteor {
-  @apply animate-meteor; /* defined in tailwind.config */
+  @apply animate-meteor;
   @apply absolute top-1/2 left-1/2 w-px h-[75vh];
-  @apply bg-gradient-to-b from-white to-transparent;
+  @apply bg-linear-to-b from-white to-transparent;
 }
 
 #meteors .shower.ur {
@@ -190,13 +241,13 @@ article img {
 }
 
 #meteors .shower.dr {
-  @apply rotate-135;
+  @apply rotate-[135deg];
 }
 
 #meteors .shower.dl {
-  @apply rotate-225;
+  @apply rotate-[225deg];
 }
 
 #meteors .shower.ul {
-  @apply rotate-315;
+  @apply rotate-[315deg];
 }
