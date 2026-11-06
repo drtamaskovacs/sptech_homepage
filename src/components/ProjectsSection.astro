@@ -17,7 +17,6 @@ interface ProjectData {
 
 interface CollectionEntry {
   id: string;
-  slug: string;
   body: string;
   collection: string;
   data: ProjectData;
@@ -56,7 +55,7 @@ const {
     <div class="flex flex-col gap-3 max-w-4xl mx-auto">
       {projects.map((project) => (
         <a
-          href={`/${project.collection}/${project.slug}`}
+          href={`/${project.collection}/${project.id}`}
           class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out"
         >
           <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
