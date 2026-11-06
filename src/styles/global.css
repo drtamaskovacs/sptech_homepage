@@ -113,6 +113,11 @@ article {
   @apply prose dark:prose-invert max-w-full pb-12;
 }
 
+article p,
+article li {
+  text-align: justify;
+}
+
 .page-heading {
   @apply font-semibold text-black dark:text-white;
 }
