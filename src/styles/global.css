@@ -68,6 +68,38 @@
   );
 }
 
+/* Unified responsive vertical section padding
+   mobile 48px, tablet 64px, desktop 80px */
+.section-y {
+  padding-block: 3rem;
+}
+@media (min-width: 48rem) {
+  .section-y {
+    padding-block: 4rem;
+  }
+}
+@media (min-width: 64rem) {
+  .section-y {
+    padding-block: 5rem;
+  }
+}
+
+/* Unified spacing between a section subtitle and its content
+   mobile 32px, tablet 48px, desktop 64px */
+.section-subtitle-gap {
+  margin-bottom: 2rem;
+}
+@media (min-width: 48rem) {
+  .section-subtitle-gap {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 64rem) {
+  .section-subtitle-gap {
+    margin-bottom: 4rem;
+  }
+}
+
 /* Distinct background for the Products section */
 @utility bg-custom-products-gradient {
   background-color: #0b1120;

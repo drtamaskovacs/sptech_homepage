@@ -1,5 +1,5 @@
 ---
-import { formatDate, readingTime } from "@lib/utils";
+import { formatDate, formatYear, readingTime } from "@lib/utils";
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
@@ -53,7 +53,7 @@ const repoUrl = collection === "projects" && "repoUrl" in data ? data.repoUrl : 
       <svg class="size-5 stroke-current">
         <use href="/ui.svg#calendar"></use>
       </svg>
-      {formatDate(date)}
+      {collection === "projects" ? formatYear(date) : formatDate(date)}
     </div>
     <div class="flex items-center gap-2">
       <svg class="size-5 stroke-current">

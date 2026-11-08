@@ -3,7 +3,9 @@ title: "Unified Data Platform for Social Security Institutions"
 summary: "Developed a lightweight on-premise data platform connecting Oracle and DB2 sources, empowering social security institutions with automated, governed insights"
 date: "Oct 10 2025"
 draft: false
+featured: true
 industry: "Public Sector"
+category: "Data Engineering"
 tags:
   - Social Security
   - Data Platform
@@ -35,7 +37,7 @@ duration: "3 months"
 
 ## Challenge
 
-Cantonal social security institutions relied on several independent applications whose data resided in **separate Oracle and DB2 databases**. The institutions had no direct access to their own data and had to manually export information from each application whenever they wanted to perform any kind of analysis — a slow, error-prone process that often took several days before meaningful insights could be produced.
+Cantonal social security institutions relied on several independent applications whose data resided in **separate Oracle and DB2 databases**. The institutions had no direct access to their own data and had to manually export information from each application whenever they wanted to perform any kind of analysis - a slow, error-prone process that often took several days before meaningful insights could be produced.
 
 Additionally, the source data models were **poorly documented**, and each application followed a different and **inconsistent database structure**, making integration and mapping between systems particularly difficult.
 
@@ -45,7 +47,7 @@ Due to the Information Security and Data Protection (ISDS) framework and interna
 
 1. **Data Platform**: SP Technologies designed and implemented an on-premise unified data platform built entirely around PostgreSQL to securely replicate data from all backend databases.
 
-2. **Replication**: Using Foreign Data Wrappers (FDW) for Oracle and DB2 — extended and optimized at the source-code level — the team virtualized and then materialized data from all systems.
+2. **Replication**: Using Foreign Data Wrappers (FDW) for Oracle and DB2 - extended and optimized at the source-code level - the team virtualized and then materialized data from all systems.
 
 3. **Pipeline**: All replication, transformation, and semantic modeling steps were implemented in dbt, chosen for its minimal footprint and command-line operation without any UI or cloud dependency.
 
@@ -59,6 +61,6 @@ SP Technologies established a fully automated end-to-end data pipeline requiring
 
 - **Data delivery** became **consistent, reliable**, and governance-compliant, providing a trusted foundation for cross-system analysis and decision-making.
 
-- The unified platform also enabled greater transparency and data ownership for the institutions — empowering them to **independently analyze their operational data** without relying on third-party exports or IT intervention.
+- The unified platform also enabled greater transparency and data ownership for the institutions - empowering them to **independently analyze their operational data** without relying on third-party exports or IT intervention.
 
 </div>

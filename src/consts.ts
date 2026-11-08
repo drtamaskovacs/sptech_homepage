@@ -22,8 +22,16 @@ export const SEARCH: Page = {
 // Links
 export const LINKS: Links = [
   {
+    TEXT: "Home",
+    HREF: "/",
+  },
+  {
     TEXT: "Services",
-    HREF: "/#our-expertise",
+    HREF: "/#our-services",
+  },
+  {
+    TEXT: "AI Diagnostics",
+    HREF: "/#ai-diagnostics",
   },
   {
     TEXT: "Projects",
@@ -33,10 +41,11 @@ export const LINKS: Links = [
     TEXT: "Products",
     HREF: "/#our-products",
   },
-  {
-    TEXT: "Blog",
-    HREF: "/blog",
-  },
+  // Temporarily hidden until the blog is ready.
+  // {
+  //   TEXT: "Blog",
+  //   HREF: "/blog",
+  // },
 ];
 
 // Socials

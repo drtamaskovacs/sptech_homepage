@@ -15,11 +15,10 @@ export function formatDate(date: Date | string) {
   }).format(dateObj);
 }
 
-export function formatMonthYear(date: Date | string) {
+export function formatYear(date: Date | string) {
   const dateObj = typeof date === 'string' ? new Date(date) : date;
 
   return Intl.DateTimeFormat("en-US", {
-    month: "short",
     year: "numeric",
   }).format(dateObj);
 }

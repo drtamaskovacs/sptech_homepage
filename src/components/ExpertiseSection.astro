@@ -13,20 +13,20 @@ interface ExpertiseItem {
 // e.g., import { expertiseItems } from '../data/expertise';
 const expertiseItems: ExpertiseItem[] = [
   {
-    title: "Data Platform",
-    description: "Building and operating modern data platforms — from data hubs and meshes to log archives and data analytics",
+    title: "Data & AI Platform Engineering",
+    description: "Designing, building, and operating modern data and AI platforms - from data hubs to log archives and private LLM infrastructure",
     imageUrl: "/expertise/data-platforms.png",
-    imageAlt: "Data Platform",
+    imageAlt: "Data & AI Platform Engineering",
   },
   {
-    title: "Analytics & AI",
-    description: "Combining BI, advanced analytics, machine learning, and AI capabilities to unlock insights and enable data-driven decisions.",
+    title: "AI & Analytics Enablement",
+    description: "Turning data into actionable insights through business intelligence, advanced analytics, and AI-powered applications.",
     imageUrl: "/expertise/Analytics_shiftedup.png",
-    imageAlt: "Analytics & AI",
+    imageAlt: "AI & Analytics Enablement",
   },
   {
     title: "Data Security",
-    description: "Embedding security and governance into every layer — from access control and encryption to compliance and monitoring.",
+    description: "Embedding security and governance into every layer - from access control and encryption to compliance and monitoring.",
     imageUrl: "/expertise/DataSecurity_shiftedup.png",
     imageAlt: "Data Security",
   },
@@ -44,13 +44,13 @@ interface Props {
   items?: ExpertiseItem[];
 }
 
-const { title = "Our Expertise", subtitle = "Our comprehensive approach encompasses four interconnected areas", items = expertiseItems } = Astro.props;
+const { title = "Our Services", subtitle = "We design, build, secure, optimize, and operate modern data platforms and AI solutions.", items = expertiseItems } = Astro.props;
 ---
 
-<section id="our-expertise" class="bg-custom-blue-gradient relative scroll-mt-16">
-  <div class="container mx-auto py-32">
-    <h2 class="font-square text-center text-5xl font-bold mb-6 text-blue-400">{title}</h2>
-    <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+<section id="our-services" class="bg-custom-blue-gradient relative scroll-mt-16">
+  <div class="container mx-auto section-y">
+    <h2 class="font-square text-center text-5xl font-bold mb-5 text-blue-400">{title}</h2>
+    <p class="text-center text-gray-300 section-subtitle-gap max-w-3xl mx-auto">
       {subtitle}
     </p>
 
