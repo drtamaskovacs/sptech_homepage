@@ -1,13 +1,16 @@
 ---
 
 import { getCollection } from 'astro:content';
-import { formatDate } from '@lib/utils';
+import { formatYear } from '@lib/utils';
 
 interface ProjectData {
   title: string;
   summary: string;
   date: Date | string;
   tags: string[];
+  industry?: string;
+  category?: string;
+  featured?: boolean;
   draft?: boolean;
   demoUrl?: string;
   repoUrl?: string;
@@ -24,7 +27,7 @@ interface CollectionEntry {
 
 const allProjects = await getCollection('projects');
 const featuredProjects = allProjects
-  .filter(project => !project.data.draft)
+  .filter(project => !project.data.draft && project.data.featured)
   .sort((a, b) => {
     const dateA = new Date(a.data.date).getTime();
     const dateB = new Date(b.data.date).getTime();
@@ -45,10 +48,10 @@ const {
 } = Astro.props;
 ---
 
-<section class="bg-custom-blue-gradient py-32 relative">
+<section id="recent-projects" class="bg-slate-950 section-y relative scroll-mt-16">
   <div class="container mx-auto">
-    <h2 class="font-square text-center text-5xl font-bold mb-6 text-blue-400">{title}</h2>
-    <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+    <h2 class="font-square text-center text-5xl font-bold mb-5 text-blue-400">{title}</h2>
+    <p class="text-center text-gray-300 section-subtitle-gap max-w-3xl mx-auto">
       {subtitle}
     </p>
     
@@ -61,22 +64,20 @@ const {
           <div class="w-full group-hover:text-black group-hover:dark:text-white blend">
             <div class="flex flex-wrap items-center gap-2">
               <div class="text-sm capitalize px-2 py-0.5 rounded-full border border-black/15 dark:border-white/25">
-                project
+                {project.data.industry}
               </div>
-              <div class="text-sm uppercase">{formatDate(project.data.date)}</div>
+              {project.data.category && (
+                <div class="text-sm px-2 py-0.5 rounded-full bg-black/5 dark:bg-white/15 text-black/80 dark:text-white/80">
+                  {project.data.category}
+                </div>
+              )}
+              <div class="text-sm uppercase">{formatYear(project.data.date)}</div>
             </div>
             <div class="font-semibold mt-3 text-black dark:text-white">
               {project.data.title}
             </div>
 
             <div class="text-sm line-clamp-2">{project.data.summary}</div>
-            <ul class="flex flex-wrap mt-2 gap-1">
-              {project.data.tags.map((tag) => (
-                <li class="text-xs uppercase py-0.5 px-1 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">
-                  {tag}
-                </li>
-              ))}
-            </ul>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +108,7 @@ const {
     
     <div class="flex justify-end mt-8 max-w-4xl mx-auto">
       <a href="/projects" class="text-white flex items-center group">
-        All Projects 
+        View All Projects
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
         </svg>

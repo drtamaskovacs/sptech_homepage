@@ -1,7 +1,12 @@
 ---
 import ExpertiseSection from "@components/ExpertiseSection.astro";
+import AIDiagnosticsSection from "@components/AIDiagnosticsSection.astro";
 import ProjectsSection from "@components/ProjectsSection.astro";
-import TechStackSection from "@components/TechStackSection.astro";
+import ProductsSection from "@components/ProductsSection.astro";
+// "We Build with" section deactivated - replaced by the infinite logo marquee below.
+// import TechStackSection from "@components/TechStackSection.astro";
+// "Our Technology Stack" (logo marquee) temporarily removed from the homepage.
+// import LogoMarquee from "@components/LogoMarquee.astro";
 import CTASection from "@components/CTASection.astro";
 import MeteorShower from "@components/MeteorShower.astro";
 import TwinklingStars from "@components/TwinklingStars.astro";
@@ -38,8 +43,11 @@ import bgImage from "../../public/bg.webp";
         </p>
         <p class="text-base md:text-lg lg:text-xl max-w-2xl">We specialize in building and operating modern data platforms, delivering analytics and AI solutions, ensuring data security, and enabling scalable DevOps environments.</p>
         <div id="ctaButtons" class="animated flex flex-wrap gap-4 mt-5">
-          <a href="/projects" class="py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend">
-            View our work
+          <a href="#our-products" class="py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base text-white bg-linear-to-r from-[#0070A8] to-[#008DD2] hover:opacity-90 transition-opacity duration-300 ease-in-out">
+            Discover Our Products
+          </a>
+          <a href="#recent-projects" class="py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend">
+            Explore Our Work
           </a>
         </div>
       </div>
@@ -53,8 +61,9 @@ import bgImage from "../../public/bg.webp";
   </section>
 
   <ExpertiseSection />
-  <TechStackSection />
+  <AIDiagnosticsSection />
   <ProjectsSection />
+  <ProductsSection />
   <CTASection />
 </PageLayout>
 

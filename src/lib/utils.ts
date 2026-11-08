@@ -15,6 +15,14 @@ export function formatDate(date: Date | string) {
   }).format(dateObj);
 }
 
+export function formatYear(date: Date | string) {
+  const dateObj = typeof date === 'string' ? new Date(date) : date;
+
+  return Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+  }).format(dateObj);
+}
+
 export function readingTime(html: string) {
   const textOnly = html.replace(/<[^>]+>/g, "");
   const wordCount = textOnly.split(/\s+/).length;

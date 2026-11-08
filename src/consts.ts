@@ -26,13 +26,26 @@ export const LINKS: Links = [
     HREF: "/",
   },
   {
-    TEXT: "Projects",
-    HREF: "/projects",
+    TEXT: "Services",
+    HREF: "/#our-services",
   },
   {
-    TEXT: "Blog",
-    HREF: "/blog",
+    TEXT: "AI Diagnostics",
+    HREF: "/#ai-diagnostics",
   },
+  {
+    TEXT: "Projects",
+    HREF: "/#recent-projects",
+  },
+  {
+    TEXT: "Products",
+    HREF: "/#our-products",
+  },
+  // Temporarily hidden until the blog is ready.
+  // {
+  //   TEXT: "Blog",
+  //   HREF: "/blog",
+  // },
 ];
 
 // Socials

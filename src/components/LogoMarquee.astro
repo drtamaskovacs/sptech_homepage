@@ -1,0 +1,186 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Our Technology Stack",
+  subtitle = "Powering our solutions with cutting-edge technologies",
+} = Astro.props;
+
+// Collect every logo from the public/logos sub-folders at build time so the
+// strip stays in sync automatically when logos are added or removed.
+const logoDirs = ["Data_Related", "DevOps_Related"];
+
+const logos = logoDirs.flatMap((dir) => {
+  const dirPath = path.join(process.cwd(), "public", "logos", dir);
+  return fs
+    .readdirSync(dirPath)
+    .filter((file) => file.endsWith(".svg"))
+    .map((file) => {
+      const name = file
+        .replace(/\.svg$/, "")
+        .replace(/^\d+_/, "")
+        .replace(/_/g, " ");
+      return { src: `/logos/${dir}/${file}`, name };
+    });
+});
+
+// Decorative floating icons, scattered randomly across both axes at build time.
+const floatSources = [
+  "/logos/Data_Related/101_Airbyte.svg",
+  "/logos/DevOps_Related/211_Docker.svg",
+  "/logos/Data_Related/109_PostgreSQL.svg",
+  "/logos/DevOps_Related/213_Kubernetes.svg",
+  "/logos/Data_Related/105_DBT.svg",
+  "/logos/DevOps_Related/249_Prometheus.svg",
+  "/logos/Data_Related/120_Dagster.svg",
+  "/logos/DevOps_Related/250_Grafana.svg",
+  "/logos/Data_Related/103_Apache_Kafka.svg",
+  "/logos/DevOps_Related/201_Terraform.svg",
+  "/logos/DevOps_Related/228_Gitlab.svg",
+  "/logos/Data_Related/117_Apache_Superset.svg",
+];
+
+const sizes = [3.5, 4, 4.5, 5]; // rem
+
+// Place one icon per grid cell (so they never overlap), then jitter its
+// position inside the cell to keep the scatter looking random.
+const cols = 4;
+const rows = Math.ceil(floatSources.length / cols);
+
+// Area the icons may occupy (in %), leaving a margin from the edges.
+const areaLeft = 3;
+const areaTop = 6;
+const areaWidth = 94;
+const areaHeight = 82;
+const cellW = areaWidth / cols;
+const cellH = areaHeight / rows;
+
+// Reserve space inside each cell so a jittered icon can't spill into a neighbour.
+const padX = cellW * 0.35;
+const padY = cellH * 0.35;
+
+const floatingIcons = floatSources.map((src, i) => {
+  const col = i % cols;
+  const row = Math.floor(i / cols);
+  return {
+    src,
+    left: +(areaLeft + col * cellW + Math.random() * (cellW - padX)).toFixed(2),
+    top: +(areaTop + row * cellH + Math.random() * (cellH - padY)).toFixed(2),
+    size: sizes[Math.floor(Math.random() * sizes.length)],
+    anim: i % 2 === 0 ? "animate-float-slow" : "animate-float",
+    delay: +(Math.random() * 5).toFixed(2), // s
+  };
+});
+---
+
+<section class="bg-custom-blue-gradient section-y relative overflow-hidden">
+  <!-- Grid Background Pattern -->
+  <div class="absolute inset-0 opacity-20">
+    <div class="grid grid-cols-12 gap-4 h-full">
+      {Array(12).fill(0).map(() => (
+        <div class="border-r border-blue-600/50"></div>
+      ))}
+    </div>
+    <div class="absolute inset-0 grid grid-rows-12 gap-4">
+      {Array(12).fill(0).map(() => (
+        <div class="border-b border-blue-600/50"></div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Radial Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-radial from-transparent to-slate-900/80"></div>
+
+  <!-- Floating Technology Icons -->
+  <div class="absolute inset-0 opacity-5">
+    {floatingIcons.map((icon) => (
+      <img
+        src={icon.src}
+        class={`absolute ${icon.anim}`}
+        style={`top:${icon.top}%; left:${icon.left}%; width:${icon.size}rem; height:${icon.size}rem; animation-delay:${icon.delay}s;`}
+        alt=""
+        aria-hidden="true"
+      />
+    ))}
+  </div>
+
+  <div class="container mx-auto relative z-10">
+    <div class="text-center mb-14">
+      <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-4 font-square">{title}</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto">{subtitle}</p>
+      <p class="text-slate-400 text-sm mt-2">{logos.length} technologies</p>
+    </div>
+  </div>
+
+  <!-- Marquee -->
+  <div class="logo-marquee relative z-10">
+    <div class="marquee-row group overflow-hidden">
+      <div class="marquee-track flex w-max gap-6">
+        {/* Render the row twice so the loop is seamless. */}
+        {[...logos, ...logos].map((logo) => (
+          <div class="logo-chip flex items-center gap-3 shrink-0 h-20 px-6">
+            <img src={logo.src} alt={logo.name} title={logo.name} class="h-10 w-10 object-contain shrink-0" loading="lazy" />
+            <span class="text-slate-200 font-medium whitespace-nowrap">{logo.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Edge fade masks -->
+  <div class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 bg-gradient-to-r from-slate-900/90 to-transparent z-20"></div>
+  <div class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 bg-gradient-to-l from-slate-900/90 to-transparent z-20"></div>
+</section>
+
+<style>
+  /* Gradient utilities */
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+
+  /* Floating animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+  }
+
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(-1deg); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .marquee-track {
+    animation: marquee-scroll 120s linear infinite;
+    will-change: transform;
+  }
+
+  /* Pause the row the user is hovering over. */
+  .marquee-row:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
+  }
+</style>

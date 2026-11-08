@@ -1,4 +1,4 @@
-import { formatDate } from "@lib/utils";
+import { formatDate, formatYear } from "@lib/utils";
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
@@ -19,7 +19,9 @@ export default function ArrowCard({ entry, pill }: Props) {
               project
             </div>
           )}
-          <div class="text-sm uppercase">{formatDate(entry.data.date)}</div>
+          <div class="text-sm uppercase">
+            {entry.collection === "projects" ? formatYear(entry.data.date) : formatDate(entry.data.date)}
+          </div>
         </div>
         <div class="font-semibold mt-3 text-black dark:text-white">
           {entry.data.title}
