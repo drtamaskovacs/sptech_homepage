@@ -3,6 +3,7 @@ title: "AI-Powered Inventory Management for Pharmaceutical Supply Chain"
 summary: "Developed an intelligent inventory management system for a major Swiss pharmaceutical distributor, optimizing stock levels and reducing waste"
 date: "Nov 10 2019"
 draft: false
+industry: "Pharmaceuticals"
 tags:
   - Data Science
   - Machine Learning

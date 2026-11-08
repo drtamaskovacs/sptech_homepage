@@ -3,6 +3,7 @@ title: "Computer Vision-Enabled Quality Control for Medical Device Manufacturing
 summary: "Implemented an automated visual inspection system for a leading Swiss medical device manufacturer, enhancing product quality and production efficiency"
 date: "Sep 15 2021"
 draft: false
+industry: "Medical Devices"
 tags:
   - Computer Vision
   - AI

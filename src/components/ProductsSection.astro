@@ -1,0 +1,111 @@
+---
+// ProductsSection.astro
+
+interface ProductItem {
+  name: string;
+  subtitle: string;
+  description: string;
+  accent: string; // tailwind gradient classes for the card accent
+  href?: string; // external site, if the product has its own home
+  linkLabel: string;
+  external?: boolean;
+}
+
+const productItems: ProductItem[] = [
+  {
+    name: "RegRun",
+    subtitle: "Deterministic AI decision engine",
+    description: "Automated regulatory reporting that turns recurring compliance deadlines into a single, auditable run.",
+    accent: "from-[#18898d]/45 to-[#18898d]/5",
+    href: "https://regrun.ai",
+    linkLabel: "regrun.ai",
+    external: true,
+  },
+  {
+    name: "Clarion",
+    subtitle: "AI assisted structure reporting",
+    description: "Data quality and observability that surfaces issues early, so teams can trust every number they report.",
+    accent: "from-violet-500/30 to-fuchsia-500/10",
+    href: "https://clarion.report",
+    linkLabel: "clarion.report",
+    external: true,
+  },
+  {
+    name: "DataDock",
+    subtitle: "Ready-to-deploy data platform",
+    description: "A self-service docking station for connecting, landing, and governing data sources across the organization.",
+    accent: "from-amber-500/30 to-orange-500/10",
+    linkLabel: "Subpage coming soon",
+  },
+  {
+    name: "LogVault",
+    subtitle: "High-performance log archive",
+    description: "Cost-efficient long-term log retention with fast, searchable retrieval whenever an audit or incident demands it.",
+    accent: "from-emerald-500/30 to-teal-500/10",
+    linkLabel: "Subpage coming soon",
+  },
+];
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  items?: ProductItem[];
+}
+
+const {
+  title = "Our Products",
+  subtitle = "Purpose-built solutions for real-world challenges. Designed for reliability, performance, and practical impact.",
+  items = productItems,
+} = Astro.props;
+---
+
+<section id="our-products" class="bg-custom-products-gradient relative scroll-mt-16">
+  <div class="container mx-auto py-32">
+    <h2 class="font-square text-center text-5xl font-bold mb-6 text-blue-400">{title}</h2>
+    <p class="text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+      {subtitle}
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      {
+        items.map((item) => {
+          const Tag = item.href ? "a" : "div";
+          return (
+            <Tag
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              class="group relative block rounded-lg border border-slate-600 overflow-hidden transition-transform duration-300 hover:-translate-y-1 h-80 bg-slate-900/40 backdrop-blur-sm"
+            >
+              {/* Accent gradient wash */}
+              <div class={`absolute inset-0 bg-linear-to-br ${item.accent}`} />
+
+              {/* Large faint initial as a backdrop */}
+              <span class="pointer-events-none absolute top-3 right-4 text-[9rem] leading-none font-bold font-square text-white/5 select-none">
+                {item.name.charAt(0)}
+              </span>
+
+              {/* Bottom fade for legibility */}
+              <div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
+
+              {/* Content positioned at the bottom */}
+              <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                <h3 class="text-white text-2xl font-bold font-square">{item.name}</h3>
+                <p class="text-blue-300 text-xs font-semibold uppercase tracking-wide mb-2 line-clamp-2 min-h-[2rem]">{item.subtitle}</p>
+                <p class="text-gray-300 text-sm mb-4 line-clamp-2 min-h-[2.5rem]">{item.description}</p>
+                <span class={`inline-flex items-center gap-1 text-sm font-medium ${item.href ? "text-white group-hover:text-blue-300 transition-colors" : "text-slate-400"}`}>
+                  {item.linkLabel}
+                  {item.href && (
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H9M17 7v8" />
+                    </svg>
+                  )}
+                </span>
+              </div>
+            </Tag>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

@@ -22,12 +22,16 @@ export const SEARCH: Page = {
 // Links
 export const LINKS: Links = [
   {
-    TEXT: "Home",
-    HREF: "/",
+    TEXT: "Services",
+    HREF: "/#our-expertise",
   },
   {
     TEXT: "Projects",
     HREF: "/projects",
+  },
+  {
+    TEXT: "Products",
+    HREF: "/#our-products",
   },
   {
     TEXT: "Blog",

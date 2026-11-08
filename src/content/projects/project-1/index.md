@@ -3,6 +3,7 @@ title: "Real-time Health Data Integration System"
 summary: "Developed a scalable data integration platform for a Swiss regional hospital network, enhancing data flow and accessibility"
 date: "May 15 2019"
 draft: false
+industry: "Healthcare"
 tags:
   - Data Platform
   - Healthcare

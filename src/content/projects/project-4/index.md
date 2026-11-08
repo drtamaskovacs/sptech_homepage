@@ -3,6 +3,7 @@ title: "Federated Learning Platform for Multi-Hospital Medical Research"
 summary: "Developed a secure, privacy-preserving data science platform enabling collaborative medical research across multiple Swiss hospitals"
 date: "Mar 28 2023"
 draft: false
+industry: "Healthcare"
 tags:
   - Federated Learning
   - Healthcare

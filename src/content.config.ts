@@ -8,6 +8,7 @@ const projects = defineCollection({
     summary: z.string(),
     date: z.coerce.date(),
     tags: z.array(z.string()),
+    industry: z.string().optional(),
     draft: z.boolean().optional(),
     demoUrl: z.string().optional(),
     repoUrl: z.string().optional(),

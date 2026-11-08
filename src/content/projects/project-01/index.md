@@ -3,6 +3,7 @@ title: "Unified Data Platform for Social Security Institutions"
 summary: "Developed a lightweight on-premise data platform connecting Oracle and DB2 sources, empowering social security institutions with automated, governed insights"
 date: "Oct 10 2025"
 draft: false
+industry: "Public Sector"
 tags:
   - Social Security
   - Data Platform
