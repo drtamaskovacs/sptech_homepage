@@ -10,18 +10,18 @@ interface Step {
 const steps: Step[] = [
   {
     number: "01",
-    title: "Connect",
-    description: "Read-only access to your database or a metadata export.",
+    title: "Submit",
+    description: "Provide your database diagnostic statistics for analysis. No direct database access required.",
   },
   {
     number: "02",
-    title: "Analyse",
-    description: "AI scans structure, workload and data quality for root causes.",
+    title: "Diagnose",
+    description: "AI-assisted analysis identifies inefficient queries, indexing issues, performance anomalies, and potential root causes.",
   },
   {
     number: "03",
-    title: "Act",
-    description: "A ranked findings report and a fix plan, with our team on hand to deliver it.",
+    title: "Optimize",
+    description: "Receive a prioritized findings report and a tailored optimization plan. Our engineers can help implement and validate the improvements.",
   },
 ];
 ---
@@ -34,18 +34,19 @@ const steps: Step[] = [
         Featured Service
       </span>
 
-      <h2 class="font-square text-5xl md:text-6xl font-bold text-blue-400 mt-6 mb-6">
-        AI Diagnostics
+      <h2 class="font-square text-5xl font-bold text-blue-400 mt-6 mb-6">
+        AI Database Diagnostics & Optimization
       </h2>
 
       <p class="text-xl md:text-2xl font-bold text-white mb-6">
-        Find out what is really wrong with your database. In days, not months.
+        Find out what's slowing down your database. And how to fix it.
       </p>
 
       <p class="text-gray-300 max-w-xl mb-6">
-        AI-driven analysis of schemas, queries and data quality pinpoints the issues that
-        slow you down and ranks them by impact. You get a clear findings report and a fix
-        plan our engineers can carry out with you.
+        AI-driven analysis of query performance, execution plans, indexes, and database
+        statistics identifies bottlenecks and their potential root causes. Get prioritized
+        findings and actionable optimization recommendations - backed by our engineers to
+        help you implement improvements.
       </p>
 
       <a
